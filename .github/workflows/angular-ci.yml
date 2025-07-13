@@ -1,0 +1,28 @@
+name: Angular CI on Pull Request
+
+on:
+  pull_request:
+    branches: [ master ]  # Khi có PR vào nhánh master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🔄 Checkout code
+        uses: actions/checkout@v3
+
+      - name: 🟢 Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: 📦 Install dependencies
+        run: npm install
+
+      - name: 🔧 Build Angular project
+        run: npm run build -- --configuration production
+
+      # Nếu có unit test:
+      # - name: ✅ Run tests
+      #   run: npm run test -- --watch=false --browsers=ChromeHeadless
