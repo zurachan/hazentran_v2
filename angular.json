@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/hazentran_v2",
+            "outputPath": "dist",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -62,7 +62,8 @@
               "buildTarget": "hazentran_v2:build:production"
             },
             "development": {
-              "buildTarget": "hazentran_v2:build:development"
+              "buildTarget": "hazentran_v2:build:development",
+              "port": 5000
             }
           },
           "defaultConfiguration": "development"
