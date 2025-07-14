@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-
+import { RouterModule } from '@angular/router';
+import { NgIcon, provideIcons } from '@ng-icons/core';
+import { saxMagicpenBold } from '@ng-icons/iconsax/bold';
+import { saxCallOutline } from '@ng-icons/iconsax/outline';
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
+  imports: [NgIcon, RouterModule],
+  providers: [provideIcons({ saxMagicpenBold, saxCallOutline })],
 })
-export class AppComponent {
-  title = 'hazentran_v2';
-}
+export class AppComponent {}
