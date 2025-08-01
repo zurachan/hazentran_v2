@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { NgIcon, provideIcons } from '@ng-icons/core';
-import { saxMagicpenBold } from '@ng-icons/iconsax/bold';
-import { saxCallOutline } from '@ng-icons/iconsax/outline';
+import { Navmenu } from './layout/navmenu/navmenu';
+import { Sidebar } from './layout/sidebar/sidebar';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
-  imports: [NgIcon, RouterModule],
-  providers: [provideIcons({ saxMagicpenBold, saxCallOutline })],
+  imports: [RouterModule, Sidebar, Navmenu],
+  providers: [],
+  host: { class: 'page' },
 })
 export class AppComponent {}
