@@ -84,7 +84,7 @@ p span .caption {
 }
 
 .page {
-  height: 100vh;
+  height: 100dvh;
   background-color: white;
   display: flex;
   flex-direction: column;
