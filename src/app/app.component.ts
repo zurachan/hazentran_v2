@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { Credit } from './layout/credit/credit';
 import { Navmenu } from './layout/navmenu/navmenu';
 import { Sidebar } from './layout/sidebar/sidebar';
 import { MenuService } from './services/menu.service';
@@ -8,7 +9,7 @@ import { MenuService } from './services/menu.service';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
-  imports: [RouterModule, Sidebar, Navmenu, TranslateModule],
+  imports: [RouterModule, Sidebar, Navmenu, TranslateModule, Credit],
   providers: [],
   host: { class: 'page' },
 })
@@ -17,10 +18,13 @@ export class AppComponent {
     private translateService: TranslateService,
     private menuService: MenuService
   ) {
+    let currentLang = localStorage.getItem('lang');
+    if (!currentLang) currentLang = 'vi';
+    this.translateService.setDefaultLang(currentLang);
+    this.menuService.changeLang(currentLang === 'en');
     this.menuService.isEnglish$.subscribe((isEnglish) => {
       let lang = isEnglish ? 'en' : 'vi';
-      this.translateService.setDefaultLang(lang);
-      this.translateService.use(localStorage.getItem('lang') || lang);
+      this.translateService.use(lang);
     });
   }
 }

@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Baumans&display=swap");
 @import "tailwindcss";
-
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
 h1 {
   font-size: 44px;
 }
@@ -13,84 +19,74 @@ h3 {
 h4 {
   font-size: 20px;
 }
-
 p span {
   font-size: 16px;
   line-height: 26px;
 }
-
-p span .small {
-  font-size: 14px;
-  line-height: 20px;
+p.small,
+span.small {
+  font-size: 14px !important;
+  line-height: 20px !important;
 }
-
-p span .caption {
+p.caption,
+span.caption {
   font-size: 12px;
   line-height: 18px;
 }
-
 .baumans-regular {
   font-family: "Baumans", system-ui;
   font-weight: 400;
   font-style: normal;
 }
-
 .barlow-regular {
   font-family: "Barlow", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-
 .barlow-medium {
   font-family: "Barlow", sans-serif;
   font-weight: 500;
   font-style: normal;
 }
-
 .barlow-semibold {
   font-family: "Barlow", sans-serif;
   font-weight: 600;
   font-style: normal;
 }
-
 .barlow-bold {
   font-family: "Barlow", sans-serif;
   font-weight: 700;
   font-style: normal;
 }
-
 .barlow-regular-italic {
   font-family: "Barlow", sans-serif;
   font-weight: 400;
   font-style: italic;
 }
-
 .barlow-medium-italic {
   font-family: "Barlow", sans-serif;
   font-weight: 500;
   font-style: italic;
 }
-
 .barlow-semibold-italic {
   font-family: "Barlow", sans-serif;
   font-weight: 600;
   font-style: italic;
 }
-
 .barlow-bold-italic {
   font-family: "Barlow", sans-serif;
   font-weight: 700;
   font-style: italic;
 }
-
 .page {
   height: 100dvh;
+  max-height: 100dvh;
   background-color: white;
   display: flex;
   flex-direction: column;
 }
 .page__sidebar {
-  padding: 16px 24px 0 24px;
+  padding: 16px 24px 12px 24px;
 }
 .page__sidebar--logo {
   font-size: 20px;
@@ -110,8 +106,23 @@ p span .caption {
   height: 24px !important;
 }
 .page__content {
-  padding: 24px;
+  padding: 12px 24px;
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  min-height: 0;
+}
+.page__credit {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 24px 24px 24px;
+  gap: 8px;
+}
+.page__credit span {
+  color: #949494;
+  text-align: center;
+  letter-spacing: 0%;
 }
 .page__navmenu {
   padding: 16px 24px;
@@ -119,12 +130,100 @@ p span .caption {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  border-top: 1px solid #d9d9d9;
 }
 .navmenu-item {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 8px;
+}
+.project-owner {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+.owner-ava {
+  width: 80px;
+  height: 80px;
+  background-image: url("/image/owner-ava.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80px 80px;
+  border-radius: 50%;
+}
+.owner-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.owner-name {
+  display: flex;
+  flex: row;
+  align-items: center;
+  gap: 4px;
+}
+.owner-name span {
+  font-size: 16px;
+  line-height: 26px;
+}
+.owner-history {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.owner-history .barlow-regular {
+  font-size: 14px;
+  line-height: 20px;
+}
+.owner-profile {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.owner-profile span {
+  font-size: 14px;
+  line-height: 20px;
+  color: #5a5a5a;
+}
+.social-action {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+.social-action button {
+  padding: 8px 24px;
+  text-align: center;
+  border-radius: 6px;
+  flex-grow: 1;
+}
+.social-action .follow {
+  background-color: #f5f5f5;
+  color: #b3b3b3;
+}
+.social-action .inbox {
+  background-color: #913cf9;
+  color: #fff;
+}
+.project-divider {
+  border-bottom: 1px solid #d9d9d9;
+}
+.project-grid {
+  flex-grow: 1;
+  min-height: 0 !important;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+.project-item {
+  /* height: 170px;
+  background-size: auto 170px; */
+  aspect-ratio: 1 / 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
 }
 
 @media (min-width: 426px) {

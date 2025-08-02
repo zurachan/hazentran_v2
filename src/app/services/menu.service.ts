@@ -45,5 +45,7 @@ export class MenuService {
   isEnglish$ = this._isEnglish.asObservable();
   changeLang(isEnglish: boolean) {
     this._isEnglish.next(isEnglish);
+    let lang = isEnglish ? 'en' : 'vi';
+    localStorage.setItem('lang', lang);
   }
 }
