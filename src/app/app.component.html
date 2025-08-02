@@ -1,7 +1,12 @@
-<!-- left sidebar -->
-<app-sidebar />
-<!-- main content -->
-<router-outlet />
-<!-- Bottom navmenu -->
-<app-credit />
+<div class="page-scroll">
+    <!-- left sidebar -->
+    <app-sidebar />
+    <div class="page-wrapper">
+        <!-- main content -->
+        <router-outlet />
+        <!-- Bottom navmenu -->
+        <app-credit />
+    </div>
+</div>
+
 <app-navmenu />
