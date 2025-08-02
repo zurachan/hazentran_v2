@@ -2,5 +2,17 @@
   "menu": {
     "project": "My works",
     "contact": "Contact"
+  },
+  "credit": {
+    "thanks": "Thank you for visiting! Special thanks to buddy <a href='https://www.linkedin.com/in/duonghoang21/' target='_blank'>Dương Hoàng</a> who developed this website ✨",
+    "copyright": "© 2025 | Portfolio by Trần Phương Thảo"
+  },
+  "project": {
+    "year": "year",
+    "exp": "experience",
+    "projs": "projects",
+    "location": "Based in Hanoi, Vietnam",
+    "follow": "Following",
+    "inbox": "Message"
   }
 }

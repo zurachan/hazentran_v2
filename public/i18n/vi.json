@@ -2,5 +2,17 @@
   "menu": {
     "project": "Dự án",
     "contact": "Liên hệ"
+  },
+  "credit": {
+    "thanks": "Cảm ơn bạn đã ghé thăm! Cảm ơn <a href='https://www.linkedin.com/in/duonghoang21/' target='_blank'>Dương Hoàng</a> đã đồng hành cùng phát triển website này ✨",
+    "copyright": "© 2025 | Portfolio by Trần Phương Thảo"
+  },
+  "project": {
+    "year": "năm",
+    "exp": "kinh nghiệm",
+    "projs": "dự án",
+    "location": "Làm việc tại Hà Nội, Việt Nam",
+    "follow": "Theo dõi",
+    "inbox": "Nhắn tin"
   }
 }
