@@ -1,0 +1,11 @@
+::ng-deep .page__credit {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 24px 24px 24px;
+  gap: 8px;
+}
+::ng-deep .page__credit span {
+  color: #949494;
+  text-align: center;
+  letter-spacing: 0%;
+}
