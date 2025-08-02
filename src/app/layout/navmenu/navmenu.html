@@ -1,11 +1,13 @@
 <a class="navmenu-item" *ngFor="let item of menu$ | async; let i = index" [routerLink]="item.path">
   <ng-icon name='{{item.isActive ? item.activeIcon : item.icon}}'
     ngClass='{{item.isActive ? "menu-item__icon active" : "menu-item__icon"}}' />
-  <span class="menu-item__title" ngClass='{{item.isActive?"barlow-bold":"barlow-medium"}}'>{{item.title}}</span>
+  <span class="menu-item__title" ngClass='{{item.isActive?"barlow-bold":"barlow-medium"}}'>{{item.title |
+    translate}}</span>
 </a>
 <label for="page__navmenu--toggleLang"
   class="group relative block h-8 w-14 rounded-full bg-gray-300 transition-colors [-webkit-tap-highlight-color:_transparent] ">
-  <input type="checkbox" id="page__navmenu--toggleLang" class="peer sr-only" />
+  <input type="checkbox" id="page__navmenu--toggleLang" class="peer sr-only" [(ngModel)]="isEnglish"
+    (change)="menuService.changeLang(isEnglish)" />
   <span
     class="absolute inset-y-0 start-0 m-1 grid size-6 place-content-center rounded-full bg-white text-gray-700 transition-[inset-inline-start] peer-checked:start-6 peer-checked:*:first:hidden *:last:hidden peer-checked:*:last:block">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-full w-full">

@@ -16,14 +16,14 @@ export class MenuService {
   private _menu = new BehaviorSubject<MenuItem[]>([
     {
       icon: 'saxMagicpenOutline',
-      title: 'Dự án',
+      title: 'menu.project',
       activeIcon: 'saxMagicpenBold',
       isActive: false,
       path: '',
     },
     {
       icon: 'saxCallOutline',
-      title: 'Liên hệ',
+      title: 'menu.contact',
       activeIcon: 'saxCallBold',
       isActive: false,
       path: 'contact',
@@ -39,5 +39,11 @@ export class MenuService {
   // Cập nhật menu (ví dụ toggle active)
   updateMenu(newMenu: MenuItem[]) {
     this._menu.next(newMenu);
+  }
+
+  private _isEnglish = new BehaviorSubject<boolean>(false);
+  isEnglish$ = this._isEnglish.asObservable();
+  changeLang(isEnglish: boolean) {
+    this._isEnglish.next(isEnglish);
   }
 }
