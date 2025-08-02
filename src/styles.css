@@ -5,7 +5,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 h1 {
   font-size: 44px;
@@ -84,6 +84,7 @@ span.caption {
   background-color: white;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 .page__sidebar {
   padding: 16px 24px 12px 24px;
@@ -111,7 +112,6 @@ span.caption {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  min-height: 0;
 }
 .page__credit {
   display: flex;
