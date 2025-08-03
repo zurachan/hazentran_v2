@@ -14,5 +14,14 @@
     "location": "Based in Hanoi, Vietnam",
     "follow": "Following",
     "inbox": "Message"
+  },
+  "mf": {
+    "it": "Project Introduction",
+    "itdesc": "muFreight is a web application that enables international users to order and bid on items in Japan. The project focuses on designing an intuitive, modern, easy-to-use interface that allows users to order, bid, and manage shipping efficiently.",
+    "tg": "UI Goals:",
+    "tg1": "Design a clean interface that matches the company logo and optimizes the user experience.",
+    "tg2": "Create a reusable component system for sections such as: cards, modals, forms, etc.",
+    "tg3": "Ensure responsive design for both desktop and mobile.",
+    "typo": "Below you'll find sample text that I use to test my fonts. I've included an ever-growing selection of character and symbol combinations to check your kerning, collisions and overall tone. Copy and paste into your desired testing program and give your characters a good twice over."
   }
 }
