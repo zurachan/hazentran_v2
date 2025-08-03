@@ -30,14 +30,16 @@
   <button class="follow">
     <span class="barlow-semibold small"> {{'project.follow'|translate}} </span>
   </button>
-  <button class="inbox">
+  <button class="inbox cursor-pointer" (click)="sendMessage()">
     <span class="barlow-semibold small"> {{'project.inbox'|translate}} </span>
   </button>
 </div>
 <div class="project-divider"></div>
 <div class="project-grid">
   @for (project of projects; ; let pIndex = $index; track pIndex) {
-  <div class="project-item" [style.background-image]="'url(' + project.coverPath + ')'">
+  <div class="project-item" [style.background-image]="'url(' + project.coverPath + ')'"
+    (click)="openProjectDetail(project)">
   </div>
   }
 </div>
+<ng-container #modal></ng-container>

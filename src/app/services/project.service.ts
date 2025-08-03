@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Subject } from 'rxjs';
 
 export interface ProjectModel {
   coverPath: string;
@@ -11,7 +12,6 @@ export interface ProjectModel {
 })
 export class ProjectService {
   constructor() {}
-
   projects: ProjectModel[] = [
     {
       coverPath: '/image/MuFreight-3.jpeg',
@@ -44,4 +44,8 @@ export class ProjectService {
       name: 'Cake by VPBank',
     },
   ];
+  closeModal$ = new Subject();
+  closeModal(reason?: any) {
+    this.closeModal$.next(reason);
+  }
 }

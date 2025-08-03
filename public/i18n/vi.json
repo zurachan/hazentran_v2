@@ -14,5 +14,14 @@
     "location": "Làm việc tại Hà Nội, Việt Nam",
     "follow": "Theo dõi",
     "inbox": "Nhắn tin"
+  },
+  "mf": {
+    "it": "Giới thiệu dự án",
+    "itdesc": "muFreight là một ứng dụng web giúp người dùng quốc tế có thể đặt hàng và đấu giá những mặt hàng ở Nhật Bản. Dự án này tập trung vào việc thiết kế giao diện trực quan, hiện đại, dễ sử dụng, giúp người dùng thao tác đặt hàng, đấu giá và quản lý vận chuyển một cách hiệu quả.",
+    "tg": "Mục tiêu UI:",
+    "tg1": "Thiết kế giao diện gọn gàng, phù hợp với logo công ty và tối ưu trải nghiệm thao tác.",
+    "tg2": "Tạo hệ thống component có thể tái sử dụng cho các phần như: card, modal, form,...",
+    "tg3": "Đảm bảo thiết kế responsive cho cả desktop và mobile.",
+    "typo": "Dưới đây là đoạn văn mẫu mà tôi thường dùng để kiểm tra font chữ. Tôi đã thêm vào nhiều kiểu kết hợp ký tự và biểu tượng để giúp bạn kiểm tra khoảng cách chữ, va chạm ký tự và cảm giác tổng thể của font. Bạn có thể sao chép và dán vào phần mềm mình đang dùng để test và xem lại thật kỹ từng ký tự."
   }
 }

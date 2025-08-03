@@ -1,0 +1,105 @@
+.mf-cv {
+  background-image: url("/image/MuFreight-2.jpeg");
+  background-color: #080809;
+  height: 164px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.mf-ct {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  gap: 24px;
+}
+.mf-it {
+  display: inherit;
+  flex-direction: inherit;
+  gap: 8px;
+}
+.mf-ct-cv {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 8px;
+}
+.mf-it-cv {
+  background-image: url("/image/MuFreight-3.jpeg");
+  height: 245px;
+}
+.mf-it ul.list-disc {
+  padding-left: 24px;
+}
+.mf-tg-cv-1 {
+  background-image: url("/image/MuFreight-5.jpeg");
+  height: 315px;
+}
+.mf-tg-cv-2 {
+  background-image: url("/image/MuFreight-6.jpeg");
+  height: 315px;
+}
+.mf-tg-cv-3 {
+  background-image: url("/image/MuFreight-7.png");
+  height: 315px;
+}
+.mf-tg-cv-4 {
+  background-image: url("/image/MuFreight-8.jpeg");
+  height: 315px;
+}
+.mf-sg {
+  background-color: #051c3c;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  gap: 16px;
+}
+.mf-sg-cp {
+  display: inherit;
+  flex-direction: inherit;
+  gap: inherit;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 16px;
+}
+.mf-sg-cp-ls {
+  display: inherit;
+  flex-direction: inherit;
+}
+.mf-sg-cp-ls-main {
+  padding: 16px 0px 16px 16px;
+  margin-top: 8px;
+}
+.mf-sg-cp-ls-gra {
+  display: flex;
+  flex-direction: row;
+  margin-top: 3px;
+}
+.mf-sg-cp-ls-gra .flex-1 {
+  min-height: 32px;
+  line-height: 1;
+}
+.mf-sg-typo {
+  display: inherit;
+  flex-direction: inherit;
+  gap: 24px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 16px;
+}
+.mf-sg-typo-desc {
+  display: inherit;
+  flex-direction: inherit;
+  gap: 8px;
+}
+.mf-sg-typo-font {
+  display: inherit;
+  flex-direction: inherit;
+  gap: 8px;
+}
+.mf-video {
+  padding: 24px;
+}
+.mf-video video {
+  width: 100%;
+}
