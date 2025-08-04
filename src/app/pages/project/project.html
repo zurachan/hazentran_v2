@@ -1,45 +1,64 @@
-<div class="project-owner">
-  <div class="owner-ava"> </div>
-  <div class="owner-info">
-    <div class="owner-name">
-      <span class="barlow-semibold">Trần Phương Thảo</span>
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M8 1.33398C4.32667 1.33398 1.33333 4.32732 1.33333 8.00065C1.33333 11.674 4.32667 14.6673 8 14.6673C11.6733 14.6673 14.6667 11.674 14.6667 8.00065C14.6667 4.32732 11.6733 1.33398 8 1.33398ZM11.1867 6.46732L7.40667 10.2473C7.31333 10.3407 7.18667 10.394 7.05333 10.394C6.92 10.394 6.79333 10.3407 6.7 10.2473L4.81333 8.36065C4.62 8.16732 4.62 7.84732 4.81333 7.65398C5.00667 7.46065 5.32667 7.46065 5.52 7.65398L7.05333 9.18732L10.48 5.76065C10.6733 5.56732 10.9933 5.56732 11.1867 5.76065C11.38 5.95398 11.38 6.26732 11.1867 6.46732Z"
-          fill="#4190F7" />
-      </svg>
-    </div>
-    <div class="owner-history">
-      <span class="barlow-regular">
-        <b>+1 {{'project.year'|translate}}</b>
-        <span style="color: #B3B3B3;"> {{'project.exp'|translate}}</span>
-      </span>
-      <span class="barlow-regular">
-        <b>6</b>
-        <span style="color: #B3B3B3;"> {{'project.projs'|translate}}</span>
-      </span>
-    </div>
-    <div class="owner-profile">
-      <span class="barlow-regular">UX/ UI Designer</span>
-      <span class="barlow-regular">{{'project.location'|translate}}</span>
-      <span class="barlow-semibold-italic">"Great design doesn't shout — it <br> simply shows the way."</span>
+<div class="project-wrapper">
+  <div class="project-owner">
+    <div class="owner-ava"> </div>
+    <div class="owner-info">
+      <div class="owner-name">
+        <div class="owner-name-tick">
+          <span class="barlow-bold">Trần Phương Thảo</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M8 1.33398C4.32667 1.33398 1.33333 4.32732 1.33333 8.00065C1.33333 11.674 4.32667 14.6673 8 14.6673C11.6733 14.6673 14.6667 11.674 14.6667 8.00065C14.6667 4.32732 11.6733 1.33398 8 1.33398ZM11.1867 6.46732L7.40667 10.2473C7.31333 10.3407 7.18667 10.394 7.05333 10.394C6.92 10.394 6.79333 10.3407 6.7 10.2473L4.81333 8.36065C4.62 8.16732 4.62 7.84732 4.81333 7.65398C5.00667 7.46065 5.32667 7.46065 5.52 7.65398L7.05333 9.18732L10.48 5.76065C10.6733 5.56732 10.9933 5.56732 11.1867 5.76065C11.38 5.95398 11.38 6.26732 11.1867 6.46732Z"
+              fill="#4190F7" />
+          </svg>
+        </div>
+        <div class="social-action-md">
+          <button class="follow">
+            <span class="barlow-semibold small"> {{'project.follow'|translate}} </span>
+          </button>
+          <button class="inbox cursor-pointer" (click)="sendMessage()">
+            <span class="barlow-semibold small"> {{'project.inbox'|translate}} </span>
+          </button>
+        </div>
+      </div>
+      <div class="owner-history">
+        <span class="barlow-regular">
+          <b>+1 {{'project.year'|translate}}</b>
+          <span style="color: #B3B3B3;"> {{'project.exp'|translate}}</span>
+        </span>
+        <span class="barlow-regular">
+          <b>6</b>
+          <span style="color: #B3B3B3;"> {{'project.projs'|translate}}</span>
+        </span>
+      </div>
+      <div class="owner-profile">
+        <span class="barlow-regular">UX/ UI Designer</span>
+        <span class="barlow-regular">{{'project.location'|translate}}</span>
+        <span class="barlow-semibold-italic">"Great design doesn't shout — it simply
+          shows the way."</span>
+      </div>
     </div>
   </div>
 </div>
-<div class="social-action">
-  <button class="follow">
-    <span class="barlow-semibold small"> {{'project.follow'|translate}} </span>
-  </button>
-  <button class="inbox cursor-pointer" (click)="sendMessage()">
-    <span class="barlow-semibold small"> {{'project.inbox'|translate}} </span>
-  </button>
-</div>
-<div class="project-divider"></div>
-<div class="project-grid">
-  @for (project of projects; ; let pIndex = $index; track pIndex) {
-  <div class="project-item" [style.background-image]="'url(' + project.coverPath + ')'"
-    (click)="openProjectDetail(project)">
+<div class="project-wrapper">
+  <div class="social-action">
+    <button class="follow">
+      <span class="barlow-semibold small"> {{'project.follow'|translate}} </span>
+    </button>
+    <button class="inbox cursor-pointer" (click)="sendMessage()">
+      <span class="barlow-semibold small"> {{'project.inbox'|translate}} </span>
+    </button>
   </div>
-  }
+</div>
+<div class="project-wrapper">
+  <div class="project-divider"></div>
+</div>
+<div class="project-wrapper">
+  <div class="project-grid">
+    @for (project of projects; ; let pIndex = $index; track pIndex) {
+    <div class="project-item" [style.background-image]="'url(' + project.coverPath + ')'"
+      (click)="openProjectDetail(project)">
+    </div>
+    }
+  </div>
 </div>
 <ng-container #modal></ng-container>

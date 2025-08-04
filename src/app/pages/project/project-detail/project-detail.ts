@@ -2,8 +2,11 @@ import { CommonModule } from '@angular/common';
 import {
   AfterViewInit,
   Component,
+  ElementRef,
+  HostListener,
   Input,
   OnInit,
+  Renderer2,
   ViewChild,
   ViewContainerRef,
 } from '@angular/core';
@@ -26,7 +29,10 @@ import { Redeli } from './redeli/redeli';
 })
 export class ProjectDetailComponent implements OnInit, AfterViewInit {
   @Input() project!: ProjectModel;
-  constructor(private projectService: ProjectService) {}
+  constructor(
+    private projectService: ProjectService,
+    private renderer: Renderer2
+  ) {}
   isClosing = false;
   @ViewChild('prjdetail', { read: ViewContainerRef })
   prjdetail!: ViewContainerRef;
@@ -65,6 +71,9 @@ export class ProjectDetailComponent implements OnInit, AfterViewInit {
     this.isClosing = true;
     this.projectService.closeModal();
   }
+
+  onScroll() {}
+
   ngOnDestroy(): void {
     document.body.style.overflow = ''; // ✅ Khôi phục scroll khi đóng popup
   }
