@@ -1,7 +1,7 @@
+import { CommonModule } from '@angular/common';
 import {
   Component,
   ComponentRef,
-  HostListener,
   OnInit,
   ViewChild,
   ViewContainerRef,
@@ -16,8 +16,10 @@ import { ProjectDetailComponent } from './project-detail/project-detail';
   selector: 'app-project',
   templateUrl: './project.html',
   styleUrl: './project.css',
-  imports: [RouterModule, TranslateModule],
-  host: { class: 'page__content' },
+  imports: [CommonModule, RouterModule, TranslateModule],
+  host: {
+    class: 'py-[12px] px-[24px] flex-1 flex flex-col gap-[24px] lg:w-full',
+  },
 })
 export class Project implements OnInit {
   constructor(

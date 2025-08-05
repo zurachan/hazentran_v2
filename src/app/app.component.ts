@@ -11,7 +11,7 @@ import { MenuService } from './services/menu.service';
   styleUrl: './app.component.css',
   imports: [RouterModule, Sidebar, Navmenu, TranslateModule, Credit],
   providers: [],
-  host: { class: 'page' },
+  host: { class: 'h-full max-h-dvh bg-white flex flex-col overflow-hidden' },
 })
 export class AppComponent {
   constructor(

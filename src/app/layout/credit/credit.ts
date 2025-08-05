@@ -6,7 +6,7 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './credit.html',
   styleUrl: './credit.css',
   imports: [TranslateModule],
-  host: { class: 'page__credit' },
+  host: { class: 'flex flex-col pt-[12px] pb-[12px] px-[24px] gap-[8px]' },
 })
 export class Credit implements OnInit {
   constructor() {}

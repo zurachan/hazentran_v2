@@ -22,7 +22,10 @@ import { MenuItem, MenuService } from '../../services/menu.service';
       saxCallOutline,
     }),
   ],
-  host: { class: 'page__navmenu' },
+  host: {
+    class:
+      'px-[24px] py-[16px] mt-auto flex justify-between border-t border-t-[#d9d9d9] md:hidden lg:hidden',
+  },
 })
 export class Navmenu implements OnDestroy {
   constructor(public menuService: MenuService, private router: Router) {
