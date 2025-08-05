@@ -4,7 +4,7 @@
     "contact": "Liên hệ"
   },
   "credit": {
-    "thanks": "Cảm ơn bạn đã ghé thăm! Cảm ơn <a href='https://www.linkedin.com/in/duonghoang21/' target='_blank'>Dương Hoàng</a> đã đồng hành cùng phát triển website này ✨",
+    "thanks": "Cảm ơn bạn đã ghé thăm! Cảm ơn <a href='https://www.linkedin.com/in/duonghoang21/' target='_blank'>Hoàng Dương</a> đã đồng hành cùng phát triển website này ✨",
     "copyright": "© 2025 | Portfolio by Trần Phương Thảo"
   },
   "project": {
@@ -23,5 +23,11 @@
     "tg2": "Tạo hệ thống component có thể tái sử dụng cho các phần như: card, modal, form,...",
     "tg3": "Đảm bảo thiết kế responsive cho cả desktop và mobile.",
     "typo": "Dưới đây là đoạn văn mẫu mà tôi thường dùng để kiểm tra font chữ. Tôi đã thêm vào nhiều kiểu kết hợp ký tự và biểu tượng để giúp bạn kiểm tra khoảng cách chữ, va chạm ký tự và cảm giác tổng thể của font. Bạn có thể sao chép và dán vào phần mềm mình đang dùng để test và xem lại thật kỹ từng ký tự."
+  },
+  "contact": {
+    "touch": "Liên hệ",
+    "connect": "Rất vui được kết nối với bạn",
+    "phone": "ĐIỆN THOẠI",
+    "download": "TẢI XUỐNG CV"
   }
 }

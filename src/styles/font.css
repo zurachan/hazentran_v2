@@ -5,38 +5,34 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  /* overflow: hidden; */
 }
-h1 {
+.h1 {
   font-size: 44px;
 }
-h2 {
+.h2 {
   font-size: 32px;
 }
-h3 {
+.h3 {
   font-size: 24px;
 }
-h4 {
+.h4 {
   font-size: 20px;
 }
-p span {
+.subhead {
+  font-size: 18px;
+  line-height: 28px;
+}
+.body {
   font-size: 16px;
   line-height: 26px;
 }
-p.small,
-span.small {
-  font-size: 14px !important;
-  line-height: 20px !important;
+.small {
+  font-size: 14px;
+  line-height: 20px;
 }
-p.caption,
-span.caption {
+.caption {
   font-size: 12px;
   line-height: 18px;
-}
-p.subhead,
-span.subhead {
-  font-size: 18px;
-  line-height: 28px;
 }
 .baumans-regular {
   font-family: "Baumans", system-ui;

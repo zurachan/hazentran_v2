@@ -22,7 +22,10 @@ import { MenuItem, MenuService } from '../../services/menu.service';
       saxCallOutline,
     }),
   ],
-  host: { class: 'page__sidebar' },
+  host: {
+    class:
+      'px-[24px] pt-[16px] pb-[12px] md:px-[16px] md:py-[32px] md:flex md:flex-col md:border-r md:border-r-[#d9d9d9] lg:px-[60px] lg:py-[40px]',
+  },
 })
 export class Sidebar implements OnDestroy {
   constructor(public menuService: MenuService, private router: Router) {

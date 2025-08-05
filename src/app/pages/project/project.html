@@ -1,62 +1,68 @@
-<div class="project-wrapper">
-  <div class="project-owner">
-    <div class="owner-ava"> </div>
-    <div class="owner-info">
-      <div class="owner-name">
-        <div class="owner-name-tick">
-          <span class="barlow-bold">Trần Phương Thảo</span>
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<div class="lg:flex lg:justify-center">
+  <div class="flex gap-[24px] lg:max-w-[860px] lg:w-full">
+    <div
+      class="w-[80px] h-[80px] bg-[url(/image/owner-ava.png)] bg-no-repeat bg-center bg-cover rounded-full md:w-[110px] md:h-[110px] lg:w-[180px] lg:h-[180px]">
+    </div>
+    <div class="flex flex-col gap-[12px] flex-1 lg:gap-[12px]">
+      <div class="flex items-center md:justify-between">
+        <div class="owner-name-tick flex items-center gap-[4px] lg:gap-[8px]">
+          <span class="barlow-bold text-[18px] lg:text-[24px]">Trần Phương Thảo</span>
+          <svg class="w-[16px] h-[16px] md:w-[20px] md:h-[20px] lg:w-[24px] lg:w-[24px]" viewBox="0 0 16 16" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
             <path
               d="M8 1.33398C4.32667 1.33398 1.33333 4.32732 1.33333 8.00065C1.33333 11.674 4.32667 14.6673 8 14.6673C11.6733 14.6673 14.6667 11.674 14.6667 8.00065C14.6667 4.32732 11.6733 1.33398 8 1.33398ZM11.1867 6.46732L7.40667 10.2473C7.31333 10.3407 7.18667 10.394 7.05333 10.394C6.92 10.394 6.79333 10.3407 6.7 10.2473L4.81333 8.36065C4.62 8.16732 4.62 7.84732 4.81333 7.65398C5.00667 7.46065 5.32667 7.46065 5.52 7.65398L7.05333 9.18732L10.48 5.76065C10.6733 5.56732 10.9933 5.56732 11.1867 5.76065C11.38 5.95398 11.38 6.26732 11.1867 6.46732Z"
               fill="#4190F7" />
           </svg>
         </div>
-        <div class="social-action-md">
-          <button class="follow">
-            <span class="barlow-semibold small"> {{'project.follow'|translate}} </span>
+        <div class="social-action-md hidden md:flex gap-[8px]">
+          <button class="py-[8px] px-[24px] grow rounded-[6px] text-center bg-[#f5f5f5]">
+            <span class="barlow-semibold text-[14px] text-[#b3b3b3]"> {{'project.follow'|translate}} </span>
           </button>
-          <button class="inbox cursor-pointer" (click)="sendMessage()">
-            <span class="barlow-semibold small"> {{'project.inbox'|translate}} </span>
+          <button class="py-[8px] px-[24px] grow rounded-[6px] text-center bg-[#913cf9] cursor-pointer"
+            (click)="sendMessage()">
+            <span class="barlow-semibold text-[14px] text-[#fff]"> {{'project.inbox'|translate}} </span>
           </button>
         </div>
       </div>
-      <div class="owner-history">
-        <span class="barlow-regular">
+      <div class="flex gap-[16px] lg:gap-[24px]">
+        <span class="barlow-regular text-[14px] lg:text-[16px]">
           <b>+1 {{'project.year'|translate}}</b>
           <span style="color: #B3B3B3;"> {{'project.exp'|translate}}</span>
         </span>
-        <span class="barlow-regular">
+        <span class="barlow-regular text-[14px] lg:text-[16px]">
           <b>6</b>
           <span style="color: #B3B3B3;"> {{'project.projs'|translate}}</span>
         </span>
       </div>
-      <div class="owner-profile">
-        <span class="barlow-regular">UX/ UI Designer</span>
-        <span class="barlow-regular">{{'project.location'|translate}}</span>
-        <span class="barlow-semibold-italic">"Great design doesn't shout — it simply
-          shows the way."</span>
+      <div class="flex flex-col gap-[2px] lg:gap-[4px]">
+        <span class="barlow-regular text-[14px] text-[#5a5a5a] lg:text-[16px]">UX/ UI Designer</span>
+        <span class="barlow-regular text-[14px] text-[#5a5a5a] lg:text-[16px]">{{'project.location'|translate}}</span>
+        <span class="barlow-semibold-italic text-[14px] text-[#5a5a5a] lg:text-[16px]">
+          "Great design doesn't shout — it simply shows the way."
+        </span>
       </div>
     </div>
   </div>
 </div>
-<div class="project-wrapper">
-  <div class="social-action">
-    <button class="follow">
-      <span class="barlow-semibold small"> {{'project.follow'|translate}} </span>
+<div class="md:hidden">
+  <div class="flex gap-[8px]">
+    <button class="py-[8px] px-[24px] text-center rounded-[6px] grow bg-[#f5f5f5]">
+      <span class="barlow-semibold text-[14px] text-[#b3b3b3]"> {{'project.follow'|translate}} </span>
     </button>
-    <button class="inbox cursor-pointer" (click)="sendMessage()">
-      <span class="barlow-semibold small"> {{'project.inbox'|translate}} </span>
+    <button class="py-[8px] px-[24px]  grow text-center rounded-[6px] bg-[#913cf9] cursor-pointer"
+      (click)="sendMessage()">
+      <span class="barlow-semibold text-[14px] text-[#fff]"> {{'project.inbox'|translate}} </span>
     </button>
   </div>
 </div>
-<div class="project-wrapper">
-  <div class="project-divider"></div>
+<div class="lg:flex lg:justify-center">
+  <div class="border-b border-b-[#d9d9d9] lg:max-w-[860px] lg:w-full"></div>
 </div>
-<div class="project-wrapper">
-  <div class="project-grid">
+<div class="lg:flex lg:justify-center">
+  <div class="min-h-0 overflow-y-auto grid grid-cols-2 gap-[8px] md:grid-cols-3 lg:max-w-[860px] lg:w-full">
     @for (project of projects; ; let pIndex = $index; track pIndex) {
-    <div class="project-item" [style.background-image]="'url(' + project.coverPath + ')'"
-      (click)="openProjectDetail(project)">
+    <div class="aspect-square bg-cover bg-no-repeat bg-center rounded-[4px] cursor-pointer"
+      [ngStyle]="{ 'background-image': 'url(' + project.coverPath + ')' }" (click)="openProjectDetail(project)">
     </div>
     }
   </div>

@@ -4,7 +4,7 @@
     "contact": "Contact"
   },
   "credit": {
-    "thanks": "Thank you for visiting! Special thanks to buddy <a href='https://www.linkedin.com/in/duonghoang21/' target='_blank'>Dương Hoàng</a> who developed this website ✨",
+    "thanks": "Thank you for visiting! Special thanks to buddy <a href='https://www.linkedin.com/in/duonghoang21/' target='_blank'>Duong Hoang</a> who developed this website ✨",
     "copyright": "© 2025 | Portfolio by Trần Phương Thảo"
   },
   "project": {
@@ -23,5 +23,11 @@
     "tg2": "Create a reusable component system for sections such as: cards, modals, forms, etc.",
     "tg3": "Ensure responsive design for both desktop and mobile.",
     "typo": "Below you'll find sample text that I use to test my fonts. I've included an ever-growing selection of character and symbol combinations to check your kerning, collisions and overall tone. Copy and paste into your desired testing program and give your characters a good twice over."
+  },
+  "contact": {
+    "touch": "Get in touch",
+    "connect": "I'm glad to talk to you",
+    "phone": "PHONE",
+    "download": "DOWNLOAD CV"
   }
 }
