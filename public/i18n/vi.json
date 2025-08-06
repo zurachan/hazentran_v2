@@ -24,6 +24,20 @@
     "tg3": "Đảm bảo thiết kế responsive cho cả desktop và mobile.",
     "typo": "Dưới đây là đoạn văn mẫu mà tôi thường dùng để kiểm tra font chữ. Tôi đã thêm vào nhiều kiểu kết hợp ký tự và biểu tượng để giúp bạn kiểm tra khoảng cách chữ, va chạm ký tự và cảm giác tổng thể của font. Bạn có thể sao chép và dán vào phần mềm mình đang dùng để test và xem lại thật kỹ từng ký tự."
   },
+  "mplis": {
+    "it": "Giới thiệu dự án",
+    "itdesc": "MPLIS là một dự án hệ thống quản lý, phục vụ cho các cán bộ trong việc quản trị, vận hành hệ thống thông tin đất đai quốc gia. Dự án này tập trung vào việc thiết kế giao diện trực quan, hiện đại, dễ sử dụng, giúp người dùng thao tác một cách nhanh chóng và logic. Dự án được kết hợp với đội ngũ BA và lập trình công ty Viettel."
+  },
+  "imap": {
+    "name": "IMAP - Bản đồ số và GPS",
+    "it": "Giới thiệu dự án",
+    "itdesc": "IMAP là một hệ thống cung cấp bản đồ online và quản lý thiết bị định vị GPS. Mục tiêu của dự án là thiết kế giao diện giới thiệu sản phẩm đẹp mắt, dễ điều hướng, phù hợp với người dùng không chuyên kỹ thuật.",
+    "solution": "Giải pháp thiết kế",
+    "solution1": "Phong cách hiện đại, tối giản, tập trung vào thông tin hiển thị rõ ràng, dễ hiểu và đầy đủ.",
+    "solution2": "Màu chủ đạo: xanh và cam - tạo cảm giác công nghệ nhưng thân thiện.",
+    "solution3": "Tạo hệ thống component có thể tái sử dụng cho các phần như: card, modal, form,...",
+    "solution4": "Đảm bảo thiết kế responsive cho 5 screensize: 1920px, 1440px, 1280px, 768px và 375px."
+  },
   "contact": {
     "touch": "Liên hệ",
     "connect": "Rất vui được kết nối với bạn",

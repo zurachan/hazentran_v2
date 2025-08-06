@@ -24,6 +24,20 @@
     "tg3": "Ensure responsive design for both desktop and mobile.",
     "typo": "Below you'll find sample text that I use to test my fonts. I've included an ever-growing selection of character and symbol combinations to check your kerning, collisions and overall tone. Copy and paste into your desired testing program and give your characters a good twice over."
   },
+  "mplis": {
+    "it": "Project Introduction",
+    "itdesc": "MPLIS is a management system project, serving officials in the administration and operation of the national land information system. This project focuses on designing an intuitive, modern, easy-to-use interface, helping users to operate quickly and logically. The project is combined with the BA, QA and programming team from Viettel company."
+  },
+  "imap": {
+    "name": "IMAP - Live maps and GPS",
+    "it": "Project Introduction",
+    "itdesc": "IMAP is a system that provides online maps and manages GPS tracking devices. The goal of the project is to design a visually appealing, easy-to-navigate interface tailored for non-technical users.",
+    "solution": "Design solutions",
+    "solution1": "The design follows a modern and minimalist style, focusing on displaying clear, easy-to-understand, and comprehensive information.",
+    "solution2": "The primary colors are blue and orange — conveying a sense of technology while remaining friendly and approachable.",
+    "solution3": "A reusable component system was created for elements such as cards, modals, and forms, etc.",
+    "solution4": "The layout is fully responsive across 5 screen sizes: 1920px, 1440px, 1280px, 768px, and 375px."
+  },
   "contact": {
     "touch": "Get in touch",
     "connect": "I'm glad to talk to you",
