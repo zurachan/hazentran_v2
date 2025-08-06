@@ -1,5 +1,6 @@
-<div
-  class="bg-[url(/image/MuFreight-2.jpeg)] bg-[#080809] bg-contain bg-no-repeat bg-center h-[164px] md:h-[220px] lg:h-[466px]">
+<div class="relative bg-[#080809] h-[164px] md:h-[220px] lg:h-[466px] overflow-hidden">
+  <img src="/image/MuFreight-2.jpeg" alt="MuFreight" loading="lazy"
+    class="absolute inset-0 w-full h-full object-contain object-center" />
 </div>
 <div class="flex flex-col p-[24px] gap-[24px] md:p-[40px] lg:px-[80px] lg:py-[60px]">
   <span class="barlow-bold text-[18px] md:text-[20px] lg:text-[32px]">muFreight</span>
@@ -7,8 +8,9 @@
     <span class="barlow-semibold text-[16px] md:text-[18px] lg:text-[24px]">{{'mf.it'|translate}}</span>
     <span class="barlow-regular text-[14px] lg:text-[18px]"> {{'mf.itdesc'|translate}} </span>
   </div>
-  <div
-    class="w-full rounded-[8px] bg-cover bg-no-repeat bg-center bg-[url(/image/MuFreight-3.jpeg)] h-[245px] md:h-[396px] lg:h-[840px] ">
+  <div class="relative w-full rounded-[8px] overflow-hidden h-[245px] md:h-[396px] lg:h-[840px]">
+    <img src="/image/MuFreight-3.jpeg" alt="MuFreight" loading="lazy"
+      class="absolute inset-0 w-full h-full object-cover object-center" />
   </div>
   <div class="flex flex-col gap-[8px]">
     <span class="barlow-semibold text-[16px] md:text-[18px] lg:text-[24px]">{{'mf.tg'|translate}}</span>
@@ -21,13 +23,17 @@
     </span>
   </div>
   <div class="grid grid-cols-1 gap-[24px] md:grid-cols-2 lg:gap-[40px]">
-    <div class="bg-cover bg-no-repeat bg-center bg-[url(/image/MuFreight-5.jpeg)] h-[315px] md:h-[243px] lg:h-[520px]">
+    <div class="relative h-[315px] md:h-[243px] lg:h-[520px]">
+      <img src="/image/MuFreight-5.jpeg" alt="MuFreight-5" loading="lazy" class="w-full h-full object-cover" />
     </div>
-    <div class="bg-cover bg-no-repeat bg-center bg-[url(/image/MuFreight-6.jpeg)] h-[315px] md:h-[243px] lg:h-[520px]">
+    <div class="relative h-[315px] md:h-[243px] lg:h-[520px]">
+      <img src="/image/MuFreight-6.jpeg" alt="MuFreight-6" loading="lazy" class="w-full h-full object-cover" />
     </div>
-    <div class="bg-cover bg-no-repeat bg-center bg-[url(/image/MuFreight-7.png)] h-[315px] md:h-[243px] lg:h-[520px]">
+    <div class="relative h-[315px] md:h-[243px] lg:h-[520px]">
+      <img src="/image/MuFreight-7.png" alt="MuFreight-7" loading="lazy" class="w-full h-full object-cover" />
     </div>
-    <div class="bg-cover bg-no-repeat bg-center bg-[url(/image/MuFreight-8.jpeg)] h-[315px] md:h-[243px] lg:h-[520px]">
+    <div class="relative h-[315px] md:h-[243px] lg:h-[520px]">
+      <img src="/image/MuFreight-8.jpeg" alt="MuFreight-8" loading="lazy" class="w-full h-full object-cover" />
     </div>
   </div>
 </div>
@@ -253,7 +259,7 @@
 
 </div>
 <div class="p-[24px] md:p-[40px]">
-  <video class="w-full" controls autoplay muted loop>
+  <video class="w-full" controls autoplay muted loop preload="none">
     <source src="/image/MuFreight-final-mockup-video.mp4" type="video/mp4">
   </video>
 </div>
