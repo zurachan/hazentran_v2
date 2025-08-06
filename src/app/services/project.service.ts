@@ -14,32 +14,32 @@ export class ProjectService {
   constructor() {}
   projects: ProjectModel[] = [
     {
-      coverPath: '/image/MuFreight-3.jpeg',
+      coverPath: '/image/MuFreight-3.webp',
       urlPath: 'mufreight',
       name: 'muFreight',
     },
     {
-      coverPath: '/image/MPLIS.png',
+      coverPath: '/image/MPLIS.webp',
       urlPath: 'mplis',
       name: 'MPLIS',
     },
     {
-      coverPath: '/image/IMAP.png',
+      coverPath: '/image/IMAP.webp',
       urlPath: 'imap',
       name: 'IMAP',
     },
     {
-      coverPath: '/image/Call-doctors.png',
+      coverPath: '/image/Call-doctors.webp',
       urlPath: 'calldoctors',
       name: 'Call Doctors',
     },
     {
-      coverPath: '/image/Redeli-1.png',
+      coverPath: '/image/Redeli-1.webp',
       urlPath: 'redeli',
       name: 'Redeli',
     },
     {
-      coverPath: '/image/Cake-1.png',
+      coverPath: '/image/Cake-1.webp',
       urlPath: 'cake',
       name: 'Cake by VPBank',
     },
