@@ -14,32 +14,32 @@ export class ProjectService {
   constructor() {}
   projects: ProjectModel[] = [
     {
-      coverPath: '/image/MuFreight-3.webp',
+      coverPath: 'https://ik.imagekit.io/zurahoang21/portfolio/MuFreight-3.webp',
       urlPath: 'mufreight',
       name: 'muFreight',
     },
     {
-      coverPath: '/image/MPLIS.webp',
+      coverPath: 'https://ik.imagekit.io/zurahoang21/portfolio/MPLIS.webp',
       urlPath: 'mplis',
       name: 'MPLIS',
     },
     {
-      coverPath: '/image/IMAP.webp',
+      coverPath: 'https://ik.imagekit.io/zurahoang21/portfolio/IMAP.webp',
       urlPath: 'imap',
       name: 'IMAP',
     },
     {
-      coverPath: '/image/Call-doctors.webp',
+      coverPath: 'https://ik.imagekit.io/zurahoang21/portfolio/Call-doctors.webp',
       urlPath: 'calldoctors',
       name: 'Call Doctors',
     },
     {
-      coverPath: '/image/Redeli-1.webp',
+      coverPath: 'https://ik.imagekit.io/zurahoang21/portfolio/Redeli-1.webp',
       urlPath: 'redeli',
       name: 'Redeli',
     },
     {
-      coverPath: '/image/Cake-1.webp',
+      coverPath: 'https://ik.imagekit.io/zurahoang21/portfolio/Cake-1.webp',
       urlPath: 'cake',
       name: 'Cake by VPBank',
     },
