@@ -2,11 +2,8 @@ import { CommonModule } from '@angular/common';
 import {
   AfterViewInit,
   Component,
-  ElementRef,
-  HostListener,
   Input,
   OnInit,
-  Renderer2,
   ViewChild,
   ViewContainerRef,
 } from '@angular/core';
@@ -29,18 +26,17 @@ import { Redeli } from './redeli/redeli';
 })
 export class ProjectDetailComponent implements OnInit, AfterViewInit {
   @Input() project!: ProjectModel;
-  constructor(
-    private projectService: ProjectService,
-    private renderer: Renderer2
-  ) {}
+  constructor(private projectService: ProjectService) {}
   isClosing = false;
   @ViewChild('prjdetail', { read: ViewContainerRef })
   prjdetail!: ViewContainerRef;
   ngOnInit(): void {
-    document.body.style.overflow = 'hidden'; // ❌ Không cho scroll body
+    // ❌ Không cho scroll body
+    document.body.style.overflow = 'hidden';
+    window.addEventListener('keydown', this.handleKeydown);
   }
   ngAfterViewInit(): void {
-    this.loadDynamicComponent(); // ✅ ViewChild đã có giá trị
+    this.loadDynamicComponent();
   }
   private loadDynamicComponent() {
     this.prjdetail.clear(); // xoá trước
@@ -71,10 +67,16 @@ export class ProjectDetailComponent implements OnInit, AfterViewInit {
     this.isClosing = true;
     this.projectService.closeModal();
   }
-
+  handleKeydown = (event: KeyboardEvent) => {
+    if (event.key === 'Escape') {
+      this.onClose();
+    }
+  };
   onScroll() {}
 
   ngOnDestroy(): void {
-    document.body.style.overflow = ''; // ✅ Khôi phục scroll khi đóng popup
+    // ✅ Khôi phục scroll khi đóng popup
+    document.body.style.overflow = '';
+    window.removeEventListener('keydown', this.handleKeydown);
   }
 }

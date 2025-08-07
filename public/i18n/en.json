@@ -16,21 +16,17 @@
     "inbox": "Message"
   },
   "mf": {
-    "it": "Project Introduction",
     "itdesc": "muFreight is a web application that enables international users to order and bid on items in Japan. The project focuses on designing an intuitive, modern, easy-to-use interface that allows users to order, bid, and manage shipping efficiently.",
     "tg": "UI Goals:",
     "tg1": "Design a clean interface that matches the company logo and optimizes the user experience.",
     "tg2": "Create a reusable component system for sections such as: cards, modals, forms, etc.",
-    "tg3": "Ensure responsive design for both desktop and mobile.",
-    "typo": "Below you'll find sample text that I use to test my fonts. I've included an ever-growing selection of character and symbol combinations to check your kerning, collisions and overall tone. Copy and paste into your desired testing program and give your characters a good twice over."
+    "tg3": "Ensure responsive design for both desktop and mobile."
   },
   "mplis": {
-    "it": "Project Introduction",
     "itdesc": "MPLIS is a management system project, serving officials in the administration and operation of the national land information system. This project focuses on designing an intuitive, modern, easy-to-use interface, helping users to operate quickly and logically. The project is combined with the BA, QA and programming team from Viettel company."
   },
   "imap": {
     "name": "IMAP - Live maps and GPS",
-    "it": "Project Introduction",
     "itdesc": "IMAP is a system that provides online maps and manages GPS tracking devices. The goal of the project is to design a visually appealing, easy-to-navigate interface tailored for non-technical users.",
     "solution": "Design solutions",
     "solution1": "The design follows a modern and minimalist style, focusing on displaying clear, easy-to-understand, and comprehensive information.",
@@ -39,24 +35,15 @@
     "solution4": "The layout is fully responsive across 5 screen sizes: 1920px, 1440px, 1280px, 768px, and 375px."
   },
   "cd": {
-    "tb": "The Problem",
     "tbd": "The process of visiting hospitals can be complex and overwhelming for patients, leading to frustration and inefficiency. This problem encompasses various challenges faced by patients from scheduling appointments to receiving medical care and follow-up",
-    "os": "Our solution",
     "osd": "An app can enhance the patient experience, improve operational efficiency, and ultimately provide better healthcare outcomes.",
-    "rs": "Research",
     "rsd": "We conducted both types of research: Primary research and secondary research. Here are the results after 2 weeks of researching documents on the Internet, interviewing the target audience and sending out surveys:",
     "rsd1": "Result 1: People are not very satisfied with their medical treatment process (2125 dissatisfied reviews in the medical examination registration process)",
     "rsd2": "Result 2: People often arrive at the hospital early to wait in line and have to wait an average of 30 minutes for their turn.",
     "rsd3": "Result 3: Saving time and still having a good place to get medical care is everyone's biggest wish.",
-    "up": "User Personas",
+
     "upd": "Based on the results of the primary research, we defined 3 User Personas:",
-    "age": "Age:",
-    "status": "Status:",
-    "location": "Location:",
-    "occupation": "Occupation:",
-    "gn": "Goals & Needs",
-    "mov": "Motivations",
-    "frus": "Frustrations",
+
     "b": {
       "name": "B Thi Nguyen",
       "status": "Single",
@@ -100,30 +87,107 @@
       "frus1": "Busy work does not have much time to wait and perform procedures that are too complicated and cumbersome.",
       "frus2": "Facilities are not guaranteed, such as: not enough chairs in the queue to go in for examination."
     },
-    "ps": "Problem statement",
     "ps1": "A is a student and a person who focuses on the quality of life. Therefore, A needs a solution to help save time when going to the doctor when needed.",
     "ps2": "B is an office worker who often goes for regular check-ups and needs to be introduced to a reputable clinic with reasonable service prices because B has limited time and moderate finances.",
     "ps3": "H is a businessman with a family, so he is very busy. Therefore, he needs a solution that will help him get medical checkups and treatment quickly and be more proactive with his time. He also wants reviews that objectively evaluate hospital criteria so that he can make reasonable choices.",
-    "vp": "Value Proposition",
     "vp1": "Call Doctors has an appointment scheduling function that significantly reduces your waiting time.",
     "vp2": "Call Doctors has the function of displaying the exact and clear service prices of each medical facility, helping you make optimal financial decisions.",
     "vp3": "Users can rate and view reputable reviews from people who have used the service, thereby choosing the best quality medical facility.",
-    "uf": "User Flow",
-    "ufd": "Flow of the appointment making function",
-    "ia": "Information Architecture"
+    "ufd": "Flow of the appointment making function"
   },
   "redeli": {
-    "tb": "The Problem",
     "tbd": "Young people's demands for high quality food are on the rise, and they can be overwhelmed by the many choices available today.",
-    "os": "Our solution",
     "osd": "reDeli brings the user closer to the place to eat and drink that is best suited to their mood, budget and preferences.",
     "rcm": "Recommendations based on moods",
     "rcmd": "Whether you're feeling happy and celebratory, romantic, relaxed and casual, adventurous, nostalgic, or inspired and creative, this function suggests the perfect place to match your mood.",
     "ap": "Auto planning",
     "apd": "It takes into account the user's preferences, current mood, dietary restrictions, and location to curate a seamless and enjoyable experience. The function aims to save time and effort by providing a well-rounded plan that covers different parts of the day, ensuring that users have a delightful culinary journey from start to finish.",
     "easy": "Easily find place and book table",
-    "easyd": "By leveraging user preferences, location, and real-time availability data, it provides a seamless experience for discovering suitable venues and making reservations. Whether planning a quick coffee break, a dinner date, or an evening out with friends, this function ensures users can effortlessly find and secure a table without the hassle of manual searches and phone calls."
+    "easyd": "By leveraging user preferences, location, and real-time availability data, it provides a seamless experience for discovering suitable venues and making reservations. Whether planning a quick coffee break, a dinner date, or an evening out with friends, this function ensures users can effortlessly find and secure a table without the hassle of manual searches and phone calls.",
+    "processDesc": "Download our process book below for a detailed look at our research and how our final designs & features came together."
   },
+  "cake": {
+    "rs": {
+      "ov": "Overview:",
+      "ov1": "Be Group cooperates with VPBank to launch Cake digital bank. Cake is a digital banking service of VPBank, one of the largest banks in Vietnam. Cake was launched in late 2020 and is designed to provide a convenient and flexible digital banking experience for users.",
+      "ov2": "Cake by VPBank targets individual users, young people aged 16 and over, and businesses that need to use online financial services.",
+      "record": "Two “records” that CAKE is holding:",
+      "record1": "The first digital bank in Vietnam to have 1.6 million customers after only 15 months of launching (as of April 2022).",
+      "record2": "The first bank in Asia - Pacific to achieve a record of core banking transformation in just 74 days.",
+      "disad": "Disadvantage",
+      "disad1": "The legality of digital banking is still limited, so there will be risks",
+      "disad2": "Fund certificate purchase feature is not yet advanced",
+      "disad3": "No NFC scanning yet, registration feature is inconvenient"
+    },
+    "up": {
+      "upd": "Based on the results of primary research, 2 personas were proposed:",
+      "quan": {
+        "name": "Quan Hong",
+        "status": "Married",
+        "location": "HCM City",
+        "occupation": "Freelancer",
+        "bio": "Quan lives with his wife and two young children in Ho Chi Minh City. As a freelancer, he always tries to optimize his time and work. Family is Quan's top priority, so he is concerned about ensuring his wife and children's financial future. He uses Cake Bank's services to manage his family budget, save for the future, and find loans with preferential interest rates and insurance for his family.",
+        "gn1": "The most important thing for him is to ensure a solid financial future for his family and children.",
+        "frus1": "Concerns about personal information disclosure and information security during transactions",
+        "frus2": "Application lacks of features"
+      },
+      "nhi": {
+        "name": "Nhi Thanh",
+        "status": "Single",
+        "location": "Hanoi",
+        "occupation": "Officer",
+        "bio": "Nhi has just graduated from university and is working as an office worker at a company in the city center. She is passionate about technology and frequently uses her mobile phone for most of her daily activities, including financial transactions. Nhi is looking for a digital banking application that can provide fast, cost-effective payment services and easy personal finance management. She wants to take advantage of instant transaction notifications and expense management tools to maintain financial control in her busy life.",
+        "gn1": "She needed a banking app that was free of fees and helped her manage her expenses effectively on a limited budget.",
+        "frus1": "Concerns about personal information disclosure and information security during transactions",
+        "frus2": "Rarely have a spending plan"
+      },
+      "ps1": "Nhi needed a quick and convenient solution to track major financial transactions, manage savings and expenses, and receive instant notifications of transactions as she found it difficult to manage her personal money and daily expenses.",
+      "ps2": "Quan needed a safe and convenient financial solution to save for his family's future and manage loans effectively as he had difficulty securing long-term finances and managing the family budget.",
+      "vp1": "Cake ensures 100% safety and security during transactions based on high authentication technology.",
+      "vp2": "Cake makes it easy to track your cash flow and save on your spending.",
+      "vp3": "Cake offers a digital banking app with a modern and easy-to-use interface.",
+      "ufd": "User flow for registration"
+    },
+    "ut": {
+      "ut": "Usability Testing",
+      "name": "Name: Redesign Cake app by VPbank",
+      "user": "Performer: Group 3",
+      "time": "Time: 05/07/2024",
+      "bg": "Background: We redesign Cake app by improving the registration flow (eKYC) and adding a spending management feature. In this new feature, users can divide their spending into funds, use money in the fund and track their spending history.",
+      "tg": "Research objective: To find out whether using the registration flow (after improvement) and using the spending management feature is easy or not.",
+      "kpi": "Key performance indicators (KPIs)",
+      "sus": "System Usability Scale (SUS)",
+      "mt": "Method:",
+      "mt1": "Moderated usability study.",
+      "mt2": "Location: Hanoi",
+      "mt3": "Duration: from 07/07 to 10/07",
+      "mt4": "Each participant will experience 2 product streams on the mock-up prototype, return to the screen, then answer a questionnaire at the end of the testing session.",
+      "mt5": "Participants experience all functions: create fund, deposit, withdraw, transfer money, edit fund, view tracking table (expense management).",
+      "candidate": "Participant:",
+      "candidateDesc": "Participants have smart phones, regularly use banks/digital banks.",
+      "candidateQuan": "1 male, 2 female, aged 18-30.",
+      "par1": "Participant 1",
+      "par2": "Participant 2",
+      "par3": "Participant 3"
+    }
+  },
+  "it": "Project Introduction",
+  "rs": "Nghiên cứu",
+  "tb": "The Problem",
+  "os": "Our solution",
+  "up": "User Personas",
+  "age": "Age:",
+  "status": "Status:",
+  "location": "Location:",
+  "occupation": "Occupation:",
+  "gn": "Goals & Needs",
+  "mov": "Motivations",
+  "frus": "Frustrations",
+  "ps": "Problem statement",
+  "vp": "Value Proposition",
+  "uf": "User Flow",
+  "ia": "Information Architecture",
+  "typo": "Below you'll find sample text that I use to test my fonts. I've included an ever-growing selection of character and symbol combinations to check your kerning, collisions and overall tone. Copy and paste into your desired testing program and give your characters a good twice over.",
   "contact": {
     "touch": "Get in touch",
     "connect": "I'm glad to talk to you",

@@ -16,21 +16,17 @@
     "inbox": "Nhắn tin"
   },
   "mf": {
-    "it": "Giới thiệu dự án",
     "itdesc": "muFreight là một ứng dụng web giúp người dùng quốc tế có thể đặt hàng và đấu giá những mặt hàng ở Nhật Bản. Dự án này tập trung vào việc thiết kế giao diện trực quan, hiện đại, dễ sử dụng, giúp người dùng thao tác đặt hàng, đấu giá và quản lý vận chuyển một cách hiệu quả.",
     "tg": "Mục tiêu UI:",
     "tg1": "Thiết kế giao diện gọn gàng, phù hợp với logo công ty và tối ưu trải nghiệm thao tác.",
     "tg2": "Tạo hệ thống component có thể tái sử dụng cho các phần như: card, modal, form,...",
-    "tg3": "Đảm bảo thiết kế responsive cho cả desktop và mobile.",
-    "typo": "Dưới đây là đoạn văn mẫu mà tôi thường dùng để kiểm tra font chữ. Tôi đã thêm vào nhiều kiểu kết hợp ký tự và biểu tượng để giúp bạn kiểm tra khoảng cách chữ, va chạm ký tự và cảm giác tổng thể của font. Bạn có thể sao chép và dán vào phần mềm mình đang dùng để test và xem lại thật kỹ từng ký tự."
+    "tg3": "Đảm bảo thiết kế responsive cho cả desktop và mobile."
   },
   "mplis": {
-    "it": "Giới thiệu dự án",
     "itdesc": "MPLIS là một dự án hệ thống quản lý, phục vụ cho các cán bộ trong việc quản trị, vận hành hệ thống thông tin đất đai quốc gia. Dự án này tập trung vào việc thiết kế giao diện trực quan, hiện đại, dễ sử dụng, giúp người dùng thao tác một cách nhanh chóng và logic. Dự án được kết hợp với đội ngũ BA và lập trình công ty Viettel."
   },
   "imap": {
     "name": "IMAP - Bản đồ số và GPS",
-    "it": "Giới thiệu dự án",
     "itdesc": "IMAP là một hệ thống cung cấp bản đồ online và quản lý thiết bị định vị GPS. Mục tiêu của dự án là thiết kế giao diện giới thiệu sản phẩm đẹp mắt, dễ điều hướng, phù hợp với người dùng không chuyên kỹ thuật.",
     "solution": "Giải pháp thiết kế",
     "solution1": "Phong cách hiện đại, tối giản, tập trung vào thông tin hiển thị rõ ràng, dễ hiểu và đầy đủ.",
@@ -39,24 +35,13 @@
     "solution4": "Đảm bảo thiết kế responsive cho 5 screensize: 1920px, 1440px, 1280px, 768px và 375px."
   },
   "cd": {
-    "tb": "Vấn đề đặt ra",
     "tbd": "Việc đi khám ở bệnh viện thường khá phức tạp và dễ khiến người bệnh cảm thấy rối rắm, mệt mỏi - từ khâu đặt lịch hẹn cho đến lúc thăm khám và theo dõi sau đó. Những khó khăn này khiến trải nghiệm trở nên kém hiệu quả và gây không ít phiền toái cho bệnh nhân.",
-    "os": "Giải pháp",
     "osd": "  Một ứng dụng có thể nâng cao trải nghiệm của bệnh nhân, cải thiện hiệu quả sự vận hành khám chữa bệnh và cuối cùng là mang lại kết quả chăm sóc sức khỏe tốt hơn.",
-    "rs": "Nghiên cứu",
     "rsd": "Chúng tôi đã tiến hành cả hai loại nghiên cứu: Primary research và secondary research. Sau đây là kết quả sau 2 tuần nghiên cứu tài liệu trên Internet, phỏng vấn đối tượng mục tiêu và gửi khảo sát:",
     "rsd1": "Kết quả 1: Mọi người không thực sự hài lòng với quy trình khám chữa bệnh (2125 đánh giá không hài lòng trong quá trình đăng ký khám bệnh).",
     "rsd2": "Kết quả 2: Mọi người thường đến bệnh viện sớm để xếp hàng và phải đợi trung bình 30 phút mới đến lượt.",
     "rsd3": "Kết quả 3: Tiết kiệm thời gian nhưng vẫn có thể khám chữa bệnh ở nơi uy tín là mong muốn lớn nhất của người bệnh.",
-    "up": "Chân dung người dùng",
     "upd": "Dựa trên kết quả nghiên cứu chính, chúng tôi đã phân loại 3 kiểu người dùng:",
-    "age": "Tuổi:",
-    "status": "Tình trạng:",
-    "location": "Nơi sống:",
-    "occupation": "Nghề nghiệp:",
-    "gn": "Nhu cầu",
-    "mov": "Điều thúc đẩy",
-    "frus": "Khó khăn",
     "b": {
       "name": "Nguyễn Thị B",
       "status": "Độc thân",
@@ -99,30 +84,107 @@
       "frus1": "Công việc bận rộn không ó nhiều thời gian chờ đợi và làm các thủ tục quá phức tạp, rườm rà",
       "frus2": "Cơ sở vật chất không đảm bảo như là: không đủ ghế tại hàng đợi để vào khám"
     },
-    "ps": "Khẳng định vấn đề",
     "ps1": "A là sinh viên và là người chú trọng đến chất lượng cuộc sống. A chỉ đi khám khi cần thiết, do đó, cô cần một giải pháp tối giản và tiết kiệm thời gian khi đi khám.",
     "ps2": "B là nhân viên văn phòng thường xuyên đi khám sức khỏe định kỳ và cần được giới thiệu đến một phòng khám uy tín, có mức giá dịch vụ hợp lý vì cô ấy có thời gian hạn hẹp và tài chính vừa phải.",
     "ps3": "H là một doanh nhân có gia đình nên rất bận rộn. Do đó, anh cần một giải pháp giúp anh được khám và điều trị bệnh nhanh chóng, chủ động hơn về thời gian. Anh cũng muốn có những đánh giá khách quan về tiêu chuẩn của bệnh viện để anh có thể đưa ra lựa chọn hợp lý.",
-    "vp": "Đề xuất giá trị",
     "vp1": "Call Doctors có tính năng đặt lịch hẹn giúp giảm đáng kể thời gian chờ đợi.",
     "vp2": "Call Doctors  hiển thị giá dịch vụ chính xác và rõ ràng của từng cơ sở y tế, giúp bạn đưa ra quyết định tài chính tối ưu.",
     "vp3": "Người dùng có thể đánh giá và xem các đánh giá uy tín từ những người đã sử dụng dịch vụ, từ đó lựa chọn được cơ sở y tế chất lượng tốt nhất.",
-    "uf": "Luồng người dùng",
-    "ufd": "Luồng chức năng đặt lịch hẹn",
-    "ia": "Kiến trúc thông tin"
+    "ufd": "Luồng chức năng đặt lịch hẹn"
   },
   "redeli": {
-    "tb": "Vấn đề đặt ra",
     "tbd": "Nhu cầu của giới trẻ về đồ ăn ngon và chất lượng đang tăng cao,  tuy nhiên trong thế giới hiện đại ngày nay họ có thể bị choáng ngợp trước quá nhiều sự lựa chọn.",
-    "os": "Giải pháp",
     "osd": "reDeli đưa người dùng đến gần hơn với địa điểm ăn uống phù hợp nhất với tâm trạng, ngân sách và sở thích của họ.",
     "rcm": "Đề xuất theo tâm trạng",
     "rcmd": "Cho dù bạn đang cảm thấy vui vẻ, hân hoan,  lãng mạn, thoải mái, thích phiêu lưu, hoài cổ hay đầy cảm hứng và sáng tạo, tính năng này sẽ gợi ý cho bạn địa điểm hoàn hảo phù hợp với tâm trạng của bạn.",
     "ap": "Lên kế hoạch tự động",
     "apd": "reDeli cân nhắc đến sở thích, tâm trạng hiện tại, chế độ ăn kiêng và vị trí của người dùng để gợi ý một trải nghiệm liền mạch và thú vị. Tính năng này giúp tiết kiệm thời gian và công sức bằng cách đưa ra một kế hoạch hợp lý cho cả ngày, đảm bảo người dùng có một hành trình ẩm thực trọn vẹn và đầy hứng khởi từ đầu đến cuối.",
     "easy": "Dễ dàng tìm chỗ và đặt bàn",
-    "easyd": "Bằng cách tận dụng sở thích của người dùng, vị trí và dữ liệu về tình trạng sẵn có theo thời gian thực, reDeli cung cấp trải nghiệm liền mạch để khám phá những địa điểm phù hợp và đặt chỗ. Cho dù đang lên kế hoạch cho một buổi giải lao uống cà phê nhanh, một buổi hẹn hò ăn tối hay một buổi tối đi chơi với bạn bè, người dùng có thể dễ dàng tìm và giữ chỗ mà không cần phải tìm kiếm thủ công và gọi điện thoại."
+    "easyd": "Bằng cách tận dụng sở thích của người dùng, vị trí và dữ liệu về tình trạng sẵn có theo thời gian thực, reDeli cung cấp trải nghiệm liền mạch để khám phá những địa điểm phù hợp và đặt chỗ. Cho dù đang lên kế hoạch cho một buổi giải lao uống cà phê nhanh, một buổi hẹn hò ăn tối hay một buổi tối đi chơi với bạn bè, người dùng có thể dễ dàng tìm và giữ chỗ mà không cần phải tìm kiếm thủ công và gọi điện thoại.",
+    "processDesc": "Download process book để xem chi tiết về nghiên cứu và cách hợp nhất giữa thiết kế & tính năng cuối cùng."
   },
+  "cake": {
+    "rs": {
+      "ov": "Tổng quan:",
+      "ov1": "Be Group phối hợp cùng VPBank ra mắt ngân hàng số Cake. Cake là một dịch vụ ngân hàng số của VPBank, một trong những ngân hàng lớn tại Việt Nam. Cake được ra mắt vào cuối năm 2020 và được thiết kế để cung cấp trải nghiệm ngân hàng kỹ thuật số tiện lợi và linh hoạt cho người dùng.",
+      "ov2": "Đối tượng Cake by VPBank hướng tới chính là những người dùng cá nhân những người trẻ từ 16 tuổi trở lên và doanh nghiệp có nhu cầu sử dụng các dịch vụ tài chính trực tuyến.",
+      "record": "Hai “kỷ lục” mà CAKE đang nắm giữ:",
+      "record1": "Ngân hàng số đầu tiên tại Việt Nam có được 1,6 triệu khách hàng chỉ sau 15 tháng ra mắt (tính đến tháng 4/2022).",
+      "record2": "Ngân hàng đầu tiên tại châu Á - Thái Bình Dương đạt kỷ lục chuyển đổi core banking chỉ trong 74 ngày.",
+      "disad": "Hạn chế",
+      "disad1": "Tính pháp lý về ngân hàng số vẫn còn hạn chế nên sẽ tồn tại rủi ro",
+      "disad2": "Tính năng mua chứng chỉ quỹ chưa chuyên sâu",
+      "disad3": "Chưa có quét NFC, tính năng đăng ký còn bất tiện"
+    },
+    "up": {
+      "upd": "Dựa vào kết quả của primary research, 2 personas đã được đưa ra:",
+      "quan": {
+        "name": "Hồng Quân",
+        "status": "Kết hôn",
+        "location": "TP Hồ Chí Minh",
+        "occupation": "Freelancer",
+        "bio": "Quân sống cùng vợ và hai con nhỏ ở HCM. Là một nhân viên tự do, anh luôn tìm cách tối ưu hóa thời gian và công việc. Gia đình là ưu tiên hàng đầu của Quân, vì vậy anh quan tâm đến việc đảm bảo tương lai tài chính cho vợ con. Anh sử dụng các dịch vụ ở ngân hàng Cake với mong muốn quản lý ngân sách gia đình, tiết kiệm cho tương lai và tìm kiếm các khoản vay với lãi suất ưu đãi, bảo hiểm cho gia đình.",
+        "gn1": "Điều quan trọng nhất đối với anh ấy là đảm bảo tương lai tài chính vững chắc cho gia đình và con cái.",
+        "frus1": "Lo lắng lộ thông tin cá nhân và tính đảm bảo thông tin khi giao dịch",
+        "frus2": "Không đa dạng tính năng"
+      },
+      "nhi": {
+        "name": "Thanh Nhi",
+        "status": "Độc thân",
+        "location": "Hà Nội",
+        "occupation": "Nhân viên văn phòng",
+        "bio": "Nhi vừa tốt nghiệp đại học và đang làm nhân viên văn phòng tại một công ty ở trung tâm thành phố. Cô đam mê công nghệ và thường xuyên sử dụng điện thoại di động cho hầu hết các hoạt động hàng ngày, bao gồm cả giao dịch tài chính. Nhi tìm kiếm một ứng dụng ngân hàng số có thể cung cấp các dịch vụ thanh toán nhanh chóng, tiết kiệm chi phí và dễ dàng quản lý tài chính cá nhân. Cô muốn tận dụng các tính năng thông báo giao dịch tức thời và công cụ quản lý chi tiêu để duy trì sự kiểm soát tài chính trong cuộc sống bận rộn của mình.",
+        "gn1": "Cô cần một ứng dụng ngân hàng không thu phí và giúp cô quản lý chi tiêu hiệu quả với ngân sách hạn chế.",
+        "frus1": "Lo lắng lộ thông tin cá nhân và tính đảm bảo thông tin khi giao dịch",
+        "frus2": "Thường không có kế hoạch chi tiêu rõ ràng"
+      },
+      "ps1": "Nhi cần một giải pháp nhanh chóng và tiện lợi để theo dõi các giao dịch tài chính, quản lí tiết kiệm chi tiêu và nhận thông báo tức thời về các giao dịch vì cô cảm thấy khó khăn trong việc quản lý dòng tiền cá nhân và chi tiêu hàng ngày.",
+      "ps2": "Quân cần một giải pháp tài chính an toàn, tiện lợi để tiết kiệm cho tương lai của gia đình và quản lý các khoản vay một cách hiệu quả vì anh gặp khó khăn trong việc đảm bảo tài chính dài hạn và quản lý ngân sách gia đình.",
+      "vp1": "Cake đảm bảo an toàn và bảo mật 100% trong quá trình giao dịch dựa vào công nghệ xác thực cao.",
+      "vp2": "Cake giúp bạn dễ dàng theo dõi dòng tiền và tiết kiệm chi tiêu của mình.",
+      "vp3": "Cake cung cấp một ứng dụng ngân hàng số với giao diện hiện đại và dễ sử dụng.",
+      "ufd": "Luồng chức năng đăng ký"
+    },
+    "ut": {
+      "ut": "Kiểm thử khả dụng",
+      "name": "Tên: Redesign ứng dụng Cake by VPbank",
+      "user": "Người thực hiện: Nhóm 3",
+      "time": "Thời gian: 05/07/2024",
+      "bg": "Background: Nhóm 3 redesign ứng dụng Cake bằng cách cải tiến lại luồng đăng kí (eKYC) và thêm tính năng quản lý chi tiêu. Ở tính năng mới này, người dùng có thể chia khoản chi tiêu của mình vào các quỹ, sử dụng tiền trong quỹ và theo dõi lịch sử chi tiêu của mình.",
+      "tg": "Mục tiêu nghiên cứu: Tìm hiểu xem việc sử dụng luồng đăng kí (sau khi được cải tiến) và sử dụng tính năng quản lý chi tiêu có dễ dàng hay không.",
+      "kpi": "Key performance indicators (KPIs)",
+      "sus": "System Usability Scale (SUS)",
+      "mt": "Phương pháp:",
+      "mt1": "Moderated usability study.",
+      "mt2": "Địa điểm: Hà Nội",
+      "mt3": "Thời gian: từ 07/7 đến 10/7",
+      "mt4": "Mỗi người tham gia sẽ trải nghiệm 2 luồng sản phẩm trên bản mock-up prototype, quay lại màn hình, sau đó trả lời một bảng câu hỏi vào cuối buổi testing.",
+      "mt5": "Người tham gia trải nghiệm hết chức năng: tạo quỹ, nạp tiền, rút tiền, chuyển tiền, chỉnh sửa quỹ, xem bảng theo dõi (quản lý chi tiêu)",
+      "candidate": "Người tham gia:",
+      "candidateDesc": "Người tham gia có smart phone, thường xuyên sử dụng ngân hàng/ ngân hàng số.",
+      "candidateQuan": "1 nam, 2 nữ, trong độ tuổi từ 18-30t.",
+      "par1": "Người tham gia 1",
+      "par2": "Người tham gia 2",
+      "par3": "Người tham gia 3"
+    }
+  },
+  "it": "Giới thiệu dự án",
+  "rs": "Nghiên cứu",
+  "tb": "Vấn đề đặt ra",
+  "os": "Giải pháp",
+  "up": "Chân dung người dùng",
+  "age": "Tuổi:",
+  "status": "Tình trạng:",
+  "location": "Nơi sống:",
+  "occupation": "Nghề nghiệp:",
+  "gn": "Nhu cầu",
+  "mov": "Điều thúc đẩy",
+  "frus": "Khó khăn",
+  "ps": "Khẳng định vấn đề",
+  "vp": "Đề xuất giá trị",
+  "uf": "Luồng người dùng",
+  "ia": "Kiến trúc thông tin",
+  "typo": "Dưới đây là đoạn văn mẫu mà tôi thường dùng để kiểm tra font chữ. Tôi đã thêm vào nhiều kiểu kết hợp ký tự và biểu tượng để giúp bạn kiểm tra khoảng cách chữ, va chạm ký tự và cảm giác tổng thể của font. Bạn có thể sao chép và dán vào phần mềm mình đang dùng để test và xem lại thật kỹ từng ký tự.",
   "contact": {
     "touch": "Liên hệ",
     "connect": "Rất vui được kết nối với bạn",
