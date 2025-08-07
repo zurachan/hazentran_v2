@@ -111,6 +111,18 @@
     "ufd": "Luồng chức năng đặt lịch hẹn",
     "ia": "Kiến trúc thông tin"
   },
+  "redeli": {
+    "tb": "Vấn đề đặt ra",
+    "tbd": "Nhu cầu của giới trẻ về đồ ăn ngon và chất lượng đang tăng cao,  tuy nhiên trong thế giới hiện đại ngày nay họ có thể bị choáng ngợp trước quá nhiều sự lựa chọn.",
+    "os": "Giải pháp",
+    "osd": "reDeli đưa người dùng đến gần hơn với địa điểm ăn uống phù hợp nhất với tâm trạng, ngân sách và sở thích của họ.",
+    "rcm": "Đề xuất theo tâm trạng",
+    "rcmd": "Cho dù bạn đang cảm thấy vui vẻ, hân hoan,  lãng mạn, thoải mái, thích phiêu lưu, hoài cổ hay đầy cảm hứng và sáng tạo, tính năng này sẽ gợi ý cho bạn địa điểm hoàn hảo phù hợp với tâm trạng của bạn.",
+    "ap": "Lên kế hoạch tự động",
+    "apd": "reDeli cân nhắc đến sở thích, tâm trạng hiện tại, chế độ ăn kiêng và vị trí của người dùng để gợi ý một trải nghiệm liền mạch và thú vị. Tính năng này giúp tiết kiệm thời gian và công sức bằng cách đưa ra một kế hoạch hợp lý cho cả ngày, đảm bảo người dùng có một hành trình ẩm thực trọn vẹn và đầy hứng khởi từ đầu đến cuối.",
+    "easy": "Dễ dàng tìm chỗ và đặt bàn",
+    "easyd": "Bằng cách tận dụng sở thích của người dùng, vị trí và dữ liệu về tình trạng sẵn có theo thời gian thực, reDeli cung cấp trải nghiệm liền mạch để khám phá những địa điểm phù hợp và đặt chỗ. Cho dù đang lên kế hoạch cho một buổi giải lao uống cà phê nhanh, một buổi hẹn hò ăn tối hay một buổi tối đi chơi với bạn bè, người dùng có thể dễ dàng tìm và giữ chỗ mà không cần phải tìm kiếm thủ công và gọi điện thoại."
+  },
   "contact": {
     "touch": "Liên hệ",
     "connect": "Rất vui được kết nối với bạn",
