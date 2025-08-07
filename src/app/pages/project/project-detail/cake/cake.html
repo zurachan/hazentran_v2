@@ -1,3 +1,516 @@
-<p>
-  cake works!
-</p>
+<div
+  class="bg-[url(https://ik.imagekit.io/zurahoang21/portfolio/banner-cake.webp)] bg-cover bg-no-repeat bg-center h-[164px] md:h-[221px] lg:h-[466px]">
+</div>
+<div class="flex flex-col gap-[24px] p-[24px] md:gap-[30px] md:p-[40px] lg:gap-[60px] lg:py-[60px] lg:px-[80px]">
+  <span class="barlow-bold text-[18px] md:text-[20px] lg:text-[32px]">Redesign Cake by VPBank</span>
+  <div class="flex justify-center">
+    <img src="https://ik.imagekit.io/zurahoang21/portfolio/call-doctors-design-thinking.png"
+      class="w-[250px] h-[134px] md:w-[300px] md:h-[160px] md:w-[500px] md:h-[267px]" alt="design thinking">
+  </div>
+  <div class="flex flex-col gap-[8px] lg:gap-[16px]">
+    <span class="barlow-semibold text-[16px] md:text-[18px] lg:text-[24px]">
+      {{'rs'|translate}}
+    </span>
+    <span class="flex flex-col gap-[5px] barlow-regular text-[14px] lg:gap-[8px] lg:text-[18px]">
+      <span>
+        {{'cake.rs.ov'|translate}}
+        <ul class="list-disc pl-[24px] md:pl-[40px] lg:pl-[80px]">
+          <li>{{'cake.rs.ov1'|translate}}</li>
+          <li>{{'cake.rs.ov2'|translate}}</li>
+        </ul>
+      </span>
+      <span>
+        {{'cake.rs.record'|translate}}
+        <ul class="list-disc pl-[24px] md:pl-[40px] lg:pl-[80px]">
+          <li>{{'cake.rs.record1'|translate}}</li>
+          <li>{{'cake.rs.record2'|translate}}</li>
+        </ul>
+      </span>
+    </span>
+    <div class="flex flex-col md:flex-row md:gap-[32px] md:items-center lg:gap-[40px]">
+      <span class="barlow-semibold text-[#CB006F] text-[16px] md:text-[18px] lg:text-[24px]">
+        {{'cake.rs.disad'|translate}}
+      </span>
+      <ul class="barlow-regular text-[14px]">
+        <li class="flex gap-[8px] md:gap-[12px] lg:gap-[16px] items-center">
+          <div
+            class="text-[#CB006F] border border-[#CB006F] rounded-full w-[20px] h-[20px] flex items-center justify-center">
+            <span class="be-vietnam-pro-regular text-[12px]">1</span>
+          </div>
+          {{'cake.rs.disad1'|translate}}
+        </li>
+        <li class="flex gap-[8px] md:gap-[12px] lg:gap-[16px] items-center">
+          <div
+            class="text-[#CB006F] border border-[#CB006F] rounded-full w-[20px] h-[20px] flex items-center justify-center">
+            <span class="be-vietnam-pro-regular text-[12px]">2</span>
+          </div>
+          {{'cake.rs.disad2'|translate}}
+        </li>
+        <li class="flex gap-[8px] md:gap-[12px] lg:gap-[16px] items-center">
+          <div
+            class="text-[#CB006F] border border-[#CB006F] rounded-full w-[20px] h-[20px] flex items-center justify-center">
+            <span class="be-vietnam-pro-regular text-[12px]">3</span>
+          </div>
+          {{'cake.rs.disad3'|translate}}
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="flex flex-col gap-[8px] lg:gap-[16px]">
+    <div class="flex flex-col gap-[8px] lg:gap-[16px]">
+      <span class="barlow-semibold text-[16px] md:text-[18px] lg:text-[24px]">
+        {{'up'|translate}}
+      </span>
+      <span class="barlow-regular text-[14px] lg:text-[18px]">
+        {{'cake.up.upd'|translate}}
+      </span>
+    </div>
+    <div class="grid grid-cols-1 gap-[24px] lg:grid-cols-2">
+      @for (candidate of candidates; let cIndex = $index; track cIndex) {
+      <div class="bg-[#ED4497] rounded-[8px] p-[8px] flex flex-col gap-[8px]">
+        <div class="flex flex-col gap-[8px] md:flex-row">
+          <div class="flex justify-center md:justify-start md:min-w-0 md:w-auto md:shrink-0">
+            <img class="w-[100px] h-[131px] md:w-[130px] md:h-[170px] object-cover shrink-0" [src]="candidate.ava"
+              [alt]="candidate.name">
+          </div>
+          <div class="flex flex-col md:grow">
+            <div class="gap-[8px] pt-0 px-[8px] pb-[8px] flex justify-center items-center md:grow md:justify-start">
+              <span class="barlow-bold text-[16px] text-[#fff]">
+                {{candidate.name|translate}}
+              </span>
+            </div>
+            <div class="bg-[#fff] rounded-[8px] py-[12px] px-[16px] flex gap-[24px]">
+              <div class="flex flex-col gap-[8px]">
+                <span class="flex gap-[8px] items-center">
+                  <svg class="w-[16px] h-[16px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="none">
+                    <path
+                      d="M6 6C7.38071 6 8.5 4.88071 8.5 3.5C8.5 2.11929 7.38071 1 6 1C4.61929 1 3.5 2.11929 3.5 3.5C3.5 4.88071 4.61929 6 6 6Z"
+                      fill="#292D32" />
+                    <path
+                      d="M6.00008 7.25C3.49508 7.25 1.45508 8.93 1.45508 11C1.45508 11.14 1.56508 11.25 1.70508 11.25H10.2951C10.4351 11.25 10.5451 11.14 10.5451 11C10.5451 8.93 8.50508 7.25 6.00008 7.25Z"
+                      fill="#292D32" />
+                  </svg>
+                  <span class="barlow-medium text-[14px]">
+                    {{'age'|translate}}
+                  </span>
+                </span>
+                <span class="flex gap-[8px] items-center">
+                  <svg class="w-[16px] h-[16px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="none">
+                    <path
+                      d="M8.22 1.55078C7.315 1.55078 6.505 1.99078 6 2.66578C5.495 1.99078 4.685 1.55078 3.78 1.55078C2.245 1.55078 1 2.80078 1 4.34578C1 4.94078 1.095 5.49078 1.26 6.00078C2.05 8.50078 4.485 9.99578 5.69 10.4058C5.86 10.4658 6.14 10.4658 6.31 10.4058C7.515 9.99578 9.95 8.50078 10.74 6.00078C10.905 5.49078 11 4.94078 11 4.34578C11 2.80078 9.755 1.55078 8.22 1.55078Z"
+                      fill="#292D32" />
+                  </svg>
+                  <span class="barlow-medium text-[14px]">
+                    {{'status'|translate}}
+                  </span>
+                </span>
+                <span class="flex gap-[8px] items-center">
+                  <svg class="w-[16px] h-[16px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="none">
+                    <g clip-path="url(#clip0_97_8191)">
+                      <path
+                        d="M10.31 4.225C9.78505 1.915 7.77005 0.875 6.00005 0.875C6.00005 0.875 6.00005 0.875 5.99505 0.875C4.23005 0.875 2.21005 1.91 1.68505 4.22C1.10005 6.8 2.68005 8.985 4.11005 10.36C4.64005 10.87 5.32005 11.125 6.00005 11.125C6.68005 11.125 7.36005 10.87 7.88505 10.36C9.31505 8.985 10.895 6.805 10.31 4.225ZM6.00005 6.73C5.13005 6.73 4.42505 6.025 4.42505 5.155C4.42505 4.285 5.13005 3.58 6.00005 3.58C6.87005 3.58 7.57505 4.285 7.57505 5.155C7.57505 6.025 6.87005 6.73 6.00005 6.73Z"
+                        fill="#292D32" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_97_8191">
+                        <rect width="12" height="12" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <span class="barlow-medium text-[14px]">
+                    {{'location'|translate}}
+                  </span>
+                </span>
+                <span class="flex gap-[8px] items-center">
+                  <svg class="w-[16px] h-[16px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="none">
+                    <path
+                      d="M10.545 3.48977C10.12 3.01977 9.41002 2.78477 8.38002 2.78477H8.26002V2.76477C8.26002 1.92477 8.26002 0.884766 6.38002 0.884766H5.62002C3.74002 0.884766 3.74002 1.92977 3.74002 2.76477V2.78977H3.62002C2.58502 2.78977 1.88002 3.02477 1.45502 3.49477C0.960019 4.04477 0.975019 4.78477 1.02502 5.28977L1.03002 5.32477L1.05747 5.61305C1.07174 5.76282 1.1525 5.89843 1.27894 5.97996C1.39215 6.05296 1.52906 6.13923 1.62002 6.18977C1.69002 6.23477 1.76502 6.27477 1.84002 6.31477C2.69502 6.78477 3.63502 7.09977 4.59002 7.25477C4.63502 7.72477 4.84002 8.27477 5.93502 8.27477C7.03002 8.27477 7.24502 7.72977 7.28002 7.24477C8.30002 7.07977 9.28502 6.72477 10.175 6.20477C10.205 6.18977 10.225 6.17477 10.25 6.15977C10.428 6.05918 10.6119 5.93763 10.7833 5.81598C10.8775 5.74916 10.9373 5.64452 10.95 5.52977V5.52977L10.975 5.29477C10.98 5.26477 10.98 5.23977 10.985 5.20477C11.025 4.69977 11.015 4.00977 10.545 3.48977ZM6.54502 6.91477C6.54502 7.44477 6.54502 7.52477 5.93002 7.52477C5.31502 7.52477 5.31502 7.42977 5.31502 6.91977V6.28977H6.54502V6.91477ZM4.45502 2.78477V2.76477C4.45502 1.91477 4.45502 1.59977 5.62002 1.59977H6.38002C7.54502 1.59977 7.54502 1.91977 7.54502 2.76477V2.78977H4.45502V2.78477Z"
+                      fill="#292D32" />
+                    <path
+                      d="M10.0306 7.05735C10.3864 6.89385 10.7942 7.17502 10.7588 7.565L10.6199 9.09535C10.5149 10.0954 10.1049 11.1153 7.90492 11.1153H4.09492C1.89492 11.1153 1.48492 10.0954 1.37992 9.10035L1.24921 7.66252C1.21417 7.27706 1.61258 6.99634 1.96722 7.15139C2.50062 7.3846 3.19572 7.67163 3.70648 7.82194C3.86942 7.86989 4.00114 7.98941 4.08543 8.13688C4.41176 8.7078 5.04534 9.01035 5.93492 9.01035C6.81589 9.01035 7.45626 8.69603 7.78425 8.12209C7.8686 7.97449 8.00033 7.85514 8.16326 7.80666C8.71119 7.64363 9.46319 7.3181 10.0306 7.05735Z"
+                      fill="#292D32" />
+                  </svg>
+                  <span class="barlow-medium text-[14px]">
+                    {{'occupation'|translate}}
+                  </span>
+                </span>
+              </div>
+              <div class="flex flex-col gap-[8px]">
+                <span class="barlow-regular text-[14px]">{{candidate.age}}</span>
+                <span class="barlow-regular text-[14px]">{{candidate.status|translate}}</span>
+                <span class="barlow-regular text-[14px]">{{candidate.location|translate}}</span>
+                <span class="barlow-regular text-[14px]">{{candidate.occupation|translate}}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-[16px] bg-white rounded-[8px]">
+          <span class="barlow-regular text-[14px]">
+            {{candidate.bio|translate}}
+          </span>
+        </div>
+        <div class="flex flex-col gap-[8px] md:flex-row md:grow">
+          <div class="p-[16px] bg-white rounded-[8px] flex flex-col gap-[8px] md:w-1/2">
+            <span class="barlow-bold text-[14px]">
+              {{'gn'|translate}}
+            </span>
+            <ul class="barlow-regular text-[14px] list-disc pl-[16px]">
+              @for (goal of candidate.goal;let gIndex = $index; track gIndex) {
+              <li>{{goal|translate}}</li>
+              }
+            </ul>
+          </div>
+          <div class="p-[16px] bg-white rounded-[8px] flex flex-col gap-[8px] md:w-1/2">
+            <span class="barlow-bold text-[14px]">
+              {{'frus'|translate}}
+            </span>
+            <ul class="barlow-regular text-[14px] list-disc pl-[16px]">
+              @for (frus of candidate.frustration;let fIndex = $index; track fIndex) {
+              <li>{{frus|translate}}</li>
+              }
+            </ul>
+          </div>
+        </div>
+      </div>
+      }
+    </div>
+  </div>
+  <div class="flex flex-col gap-[8px] lg:gap-[16px]">
+    <span class="barlow-semibold text-[16px] md:text-[18px] lg:text-[24px]">
+      {{'ps'|translate}}
+    </span>
+
+    <ol class="list-decimal pl-[24px] barlow-regular text-[14px] lg:text-[18px]">
+      <li> {{'cake.up.ps1'|translate}}</li>
+      <li> {{'cake.up.ps2'|translate}}</li>
+    </ol>
+  </div>
+  <div class="flex flex-col gap-[16px] lg:gap-[24px]">
+    <span class="barlow-semibold text-[16px] md:text-[18px] lg:text-[24px]">
+      {{'vp'|translate}}
+    </span>
+    <div class="grid grid-cols-1 gap-[12px] md:grid-cols-2 md:gap-[16px] lg:grid-cols-3 lg:gap-[24px]">
+      <div
+        class="bg-[#CD3E84] rounded-[8px] py-[24px] px-[32px] flex flex-col gap-[16px] items-center lg:py-[32px] lg:gap-[24px]">
+        <img class="w-[24px] h-[32px] lg:w-[46px] lg:h-[62px]"
+          src="https://ik.imagekit.io/zurahoang21/portfolio/lightbulb%202.png" alt="lb2">
+        <span class="barlow-regular text-[14px] text-white text-center lg:barlow-bold lg:text-[18px]">
+          {{'cake.up.vp1'|translate}}
+        </span>
+      </div>
+      <div
+        class="bg-[#CD3E84] rounded-[8px] py-[24px] px-[32px] flex flex-col gap-[16px] items-center lg:py-[32px] lg:gap-[24px]">
+        <img class="w-[24px] h-[32px] lg:w-[46px] lg:h-[62px]"
+          src="https://ik.imagekit.io/zurahoang21/portfolio/lightbulb%202.png" alt="lb2">
+        <span class="barlow-regular text-[14px] text-white text-center lg:barlow-bold lg:text-[18px]">
+          {{'cake.up.vp2'|translate}}
+        </span>
+      </div>
+      <div
+        class="bg-[#CD3E84] rounded-[8px] py-[24px] px-[32px] flex flex-col gap-[16px] items-center lg:py-[32px] lg:gap-[24px]">
+        <img class="w-[24px] h-[32px] lg:w-[46px] lg:h-[62px]"
+          src="https://ik.imagekit.io/zurahoang21/portfolio/lightbulb%202.png" alt="lb2">
+        <span class="barlow-regular text-[14px] text-white text-center lg:barlow-bold lg:text-[18px]">
+          {{'cake.up.vp3'|translate}}
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-col gap-[16px] lg:gap-[24px]">
+    <span class="barlow-semibold text-[16px] md:text-[18px] lg:text-[24px]">
+      {{'uf'|translate}}
+    </span>
+    <div class="flex flex-col gap-[10px] p-[10px] items-center">
+      <img src="https://ik.imagekit.io/zurahoang21/portfolio/cake-uf.webp" alt="cakeuf">
+      <span class="barlow-regular text-[14px] lg:text-[18px]">
+        {{'cake.up.ufd'|translate}}
+      </span>
+    </div>
+  </div>
+  <div class="flex flex-col gap-[16px] lg:gap-[24px]">
+    <span class="barlow-semibold text-[16px] md:text-[18px] lg:text-[24px]">
+      {{'ia'|translate}}
+    </span>
+    <img src="https://ik.imagekit.io/zurahoang21/portfolio/cake-ia.webp" alt="cakeia">
+  </div>
+  <div class="flex flex-col gap-[16px] lg:gap-[24px]">
+    <span class="barlow-semibold text-[16px] md:text-[18px] lg:text-[24px]">
+      Wireframe
+    </span>
+    <div class="flex gap-[16px] justify-center">
+      <img class="h-[206px] md:h-[340px] lg:h-[602px]" src="https://ik.imagekit.io/zurahoang21/portfolio/cake-wf-2.png"
+        alt="cakewf2">
+      <img class="h-[206px] md:h-[340px] lg:h-[602px]" src="https://ik.imagekit.io/zurahoang21/portfolio/cake-wf-1.png"
+        alt="cakewf1">
+    </div>
+  </div>
+  <div class="flex flex-col gap-[16px] lg:gap-[48px]">
+    <span class="barlow-semibold text-[16px] md:text-[18px] lg:text-[24px]">Style guide</span>
+    <div class="flex flex-col gap-[16px] md:gap-[24px] lg:gap-[40px] lg:flex-row">
+      <div
+        class="bg-[#fff] drop-shadow-[0_5px_5px_rgba(220,163,245,0.15)] rounded-[8px] flex flex-col p-[16px] gap-[16px] md:py-[24px] md:px-[32px] lg:gap-[24] lg:w-2/5">
+        <span class="barlow-semibold text-[14px] md:text-[16px] lg:text-[20px]">Color palette</span>
+        <div class="flex flex-col md:w-2/3">
+          <span class="barlow-regular text-[14px] lg:text-[18px]">Primary color</span>
+          <div class="mt-[8px] p-[16px] bg-[#FF1394] lg:mt-[16px]">
+            <span class="barlow-semibold leading-none text-white text-[10px]">#FF1394</span>
+          </div>
+          <div class="flex mt-[3px]">
+            <div class="flex-1 min-h-[32px] bg-[#FFD7ED]"></div>
+            <div class="flex-1 min-h-[32px] bg-[#FFAFDB]"></div>
+            <div class="flex-1 min-h-[32px] bg-[#FF87C8]"></div>
+            <div class="flex-1 min-h-[32px] bg-[#FF5FB6]"></div>
+            <div class="flex-1 min-h-[32px] bg-[#FF1394]"></div>
+            <div class="flex-1 min-h-[32px] bg-[#EF0082]"></div>
+            <div class="flex-1 min-h-[32px] bg-[#CB006F]"></div>
+          </div>
+        </div>
+        <div class="flex flex-col md:w-2/3 lg:w-full">
+          <span class="barlow-regular text-[14px] lg:text-[18px]">Neutral color</span>
+          <span class="barlow-regular text-[12px] mt-[8px] lg:mt-[16px]">Gray</span>
+          <div class="flex mt-[3px]">
+            <div class="flex-1 flex flex-col gap-[3px]">
+              <div class="h-[32px] bg-[#F2F2F4]"></div>
+              <span class="barlow-regular leading-none text-[10px]">01</span>
+            </div>
+            <div class="flex-1 flex flex-col gap-[3px]">
+              <div class="min-h-[32px] bg-[#C8C8D3]"></div>
+              <span class="barlow-regular leading-none text-[10px]">02</span>
+            </div>
+            <div class="flex-1 flex flex-col gap-[3px]">
+              <div class="min-h-[32px] bg-[#B1B1C0]"></div>
+              <span class="barlow-regular leading-none text-[10px]">03</span>
+            </div>
+            <div class="flex-1 flex flex-col gap-[3px]">
+              <div class="min-h-[32px] bg-[#9090A5]"></div>
+              <span class="barlow-regular leading-none text-[10px]">04</span>
+            </div>
+            <div class="flex-1 flex flex-col gap-[3px]">
+              <div class="min-h-[32px] bg-[#797993]"></div>
+              <span class="barlow-regular leading-none text-[10px]">05</span>
+            </div>
+            <div class="flex-1 flex flex-col gap-[3px]">
+              <div class="min-h-[32px] bg-[#555567]"></div>
+              <span class="barlow-regular leading-none text-[10px]">06</span>
+            </div>
+            <div class="flex-1 flex flex-col gap-[3px]">
+              <div class="min-h-[32px] bg-[#4A4A5A]"></div>
+              <span class="barlow-regular leading-none text-[10px]">07</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col md:w-2/3 lg:w-full">
+          <span class="barlow-regular text-[14px] lg:text-[18px]">Semantic color</span>
+          <span class="barlow-regular text-[12px] mt-[8px] lg:mt-[16px]">Success</span>
+          <div class="flex mt-[3px]">
+            <div class="flex-1 flex flex-col gap-[3px]">
+              <div class="min-h-[32px] bg-[#E8FCEF]"></div>
+              <span class="barlow-regular leading-none text-[10px]">01</span>
+            </div>
+            <div class="flex-1 flex flex-col gap-[3px]">
+              <div class="min-h-[32px] bg-[#A2F1BF]"></div>
+              <span class="barlow-regular leading-none text-[10px]">02</span>
+            </div>
+            <div class="flex-1 flex flex-col gap-[3px]">
+              <div class="min-h-[32px] bg-[#7BEBA5]"></div>
+              <span class="barlow-regular leading-none text-[10px]">03</span>
+            </div>
+            <div class="flex-1 flex flex-col gap-[3px]">
+              <div class="min-h-[32px] bg-[#43E37E]"></div>
+              <span class="barlow-regular leading-none text-[10px]">04</span>
+            </div>
+            <div class="flex-1 flex flex-col gap-[3px]">
+              <div class="min-h-[32px] bg-[#1CDD63]"></div>
+              <span class="barlow-regular leading-none text-[10px]">05</span>
+            </div>
+            <div class="flex-1 flex flex-col gap-[3px]">
+              <div class="min-h-[32px] bg-[#19C95A]"></div>
+              <span class="barlow-regular leading-none text-[10px]">06</span>
+            </div>
+            <div class="flex-1 flex flex-col gap-[3px]">
+              <div class="min-h-[32px] bg-[#149D46]"></div>
+              <span class="barlow-regular leading-none text-[10px]">07</span>
+            </div>
+          </div>
+          <span class="barlow-regular text-[12px]! mt-[8px]">Info</span>
+          <div class="flex mt-[3px]">
+            <div class="flex-1 flex flex-col gap-[3px]">
+              <div class="min-h-[32px] bg-[#ECF9FF]"></div>
+              <span class="barlow-regular leading-none text-[10px]">01</span>
+            </div>
+            <div class="flex-1 flex flex-col gap-[3px]">
+              <div class="min-h-[32px] bg-[#B0E5FF]"></div>
+              <span class="barlow-regular leading-none text-[10px]">02</span>
+            </div>
+            <div class="flex-1 flex flex-col gap-[3px]">
+              <div class="min-h-[32px] bg-[#90DAFF]"></div>
+              <span class="barlow-regular leading-none text-[10px]">03</span>
+            </div>
+            <div class="flex-1 flex flex-col gap-[3px]">
+              <div class="min-h-[32px] bg-[#60CAFF]"></div>
+              <span class="barlow-regular leading-none text-[10px]">04</span>
+            </div>
+            <div class="flex-1 flex flex-col gap-[3px]">
+              <div class="min-h-[32px] bg-[#3FBFFF]"></div>
+              <span class="barlow-regular leading-none text-[10px]">05</span>
+            </div>
+            <div class="flex-1 flex flex-col gap-[3px]">
+              <div class="min-h-[32px] bg-[#39AEE8]"></div>
+              <span class="barlow-regular leading-none text-[10px]">06</span>
+            </div>
+            <div class="flex-1 flex flex-col gap-[3px]">
+              <div class="min-h-[32px] bg-[#2D88B5]"></div>
+              <span class="barlow-regular leading-none text-[10px]">07</span>
+            </div>
+          </div>
+          <span class="barlow-regular text-[12px]! mt-[8px]">Warning</span>
+          <div class="flex mt-[3px]">
+            <div class="flex-1 flex flex-col gap-[3px]">
+              <div class="min-h-[32px] bg-[#FEF5E7]"></div>
+              <span class="barlow-regular leading-none text-[10px]">01</span>
+            </div>
+            <div class="flex-1 flex flex-col gap-[3px]">
+              <div class="min-h-[32px] bg-[#FCE1B3]"></div>
+              <span class="barlow-regular leading-none text-[10px]">02</span>
+            </div>
+            <div class="flex-1 flex flex-col gap-[3px]">
+              <div class="min-h-[32px] bg-[#FAD28F]"></div>
+              <span class="barlow-regular leading-none text-[10px]">03</span>
+            </div>
+            <div class="flex-1 flex flex-col gap-[3px]">
+              <div class="min-h-[32px] bg-[#F8BE5C]"></div>
+              <span class="barlow-regular leading-none text-[10px]">04</span>
+            </div>
+            <div class="flex-1 flex flex-col gap-[3px]">
+              <div class="min-h-[32px] bg-[#F59E0B]"></div>
+              <span class="barlow-regular leading-none text-[10px]">05</span>
+            </div>
+            <div class="flex-1 flex flex-col gap-[3px]">
+              <div class="min-h-[32px] bg-[#DF900A]"></div>
+              <span class="barlow-regular leading-none text-[10px]">06</span>
+            </div>
+            <div class="flex-1 flex flex-col gap-[3px]">
+              <div class="min-h-[32px] bg-[#AE7008]"></div>
+              <span class="barlow-regular leading-none text-[10px]">07</span>
+            </div>
+          </div>
+          <span class="barlow-regular text-[12px] mt-[8px] lg:mt-[16px]">Danger</span>
+          <div class="flex mt-[3px]">
+            <div class="flex-1 flex flex-col gap-[3px]">
+              <div class="min-h-[32px] bg-[#FFECEB]"></div>
+              <span class="barlow-regular leading-none text-[10px]">01</span>
+            </div>
+            <div class="flex-1 flex flex-col gap-[3px]">
+              <div class="min-h-[32px] bg-[#FFAFAC]"></div>
+              <span class="barlow-regular leading-none text-[10px]">02</span>
+            </div>
+            <div class="flex-1 flex flex-col gap-[3px]">
+              <div class="min-h-[32px] bg-[#FF8E8A]"></div>
+              <span class="barlow-regular leading-none text-[10px]">03</span>
+            </div>
+            <div class="flex-1 flex flex-col gap-[3px]">
+              <div class="min-h-[32px] bg-[#FF5D57]"></div>
+              <span class="barlow-regular leading-none text-[10px]">04</span>
+            </div>
+            <div class="flex-1 flex flex-col gap-[3px]">
+              <div class="min-h-[32px] bg-[#FF3C35]"></div>
+              <span class="barlow-regular leading-none text-[10px]">05</span>
+            </div>
+            <div class="flex-1 flex flex-col gap-[3px]">
+              <div class="min-h-[32px] bg-[#E83730]"></div>
+              <span class="barlow-regular leading-none text-[10px]">06</span>
+            </div>
+            <div class="flex-1 flex flex-col gap-[3px]">
+              <div class="min-h-[32px] bg-[#B52B26]"></div>
+              <span class="barlow-regular leading-none text-[10px]">07</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-[#fff] drop-shadow-[0_5px_5px_rgba(220,163,245,0.15)] rounded-[8px] h-full flex flex-col p-[16px] gap-[16px] md:py-[24px] md:px-[32px] lg:gap-[24] lg:w-3/5 ">
+        <div class="flex flex-col gap-[8px] md:gap-[16px] lg:gap-[24px]">
+          <span class="barlow-semibold text-[14px] md:text-[16px] lg:text-[20px]">Typography</span>
+          <span class="be-vietnam-pro-regular text-[14px] lg:text-[16px]"> {{'typo'|translate}} </span>
+        </div>
+        <div class="flex flex-col gap-[8px] lg:gap-[24px]">
+          <span class="barlow-semibold w-full text-[14px] md:text-[16px] lg:text-[20px]">Font Family: Inter</span>
+          <span class="flex flex-col gap-[8px] md:flex-row md:gap-[80px] lg:gap-[24px] lg:flex-wrap">
+            <span
+              class="be-vietnam-pro-medium text-[40px] md:text-[60px] lg:text-[96px] lg:leading-[1.25] lg:mr-[50px]">Aa</span>
+            <span class="flex flex-col gap-[8px] lg:gap-[16px]">
+              <span class="be-vietnam-pro-medium text-[14px] lg:text-[16px]">ABCDEFGHIKLMNOPQRSTUVWXYZ</span>
+              <span class="be-vietnam-pro-medium text-[14px] lg:text-[16px]">abcdefghiklmnopqruvxwyz</span>
+              <span class="be-vietnam-pro-medium text-[14px] lg:text-[16px]">0123456789</span>
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="bg-[#fff] drop-shadow-[0_5px_5px_rgba(220,163,245,0.15)] rounded-[8px] h-full flex flex-col p-[16px] gap-[16px] md:py-[24px] md:px-[32px] lg:gap-[24]">
+      <span class="barlow-semibold text-[14px] md:text-[16px] lg:text-[20px]">Components</span>
+      <img src="https://ik.imagekit.io/zurahoang21/portfolio/cake-component.png" alt="cakeia">
+    </div>
+  </div>
+  <div class="flex flex-col gap-[8px] lg:gap-[16px]">
+    <span class="barlow-semibold text-[16px] md:text-[18px] lg:text-[24px]">
+      {{'cake.ut.ut'|translate}}
+    </span>
+    <span class="flex flex-col gap-[8px] text-[14px] lg:gap-[12px] lg:text-[18px]">
+      <ul class="list-disc pl-[24px] text-[#3A3A3A]">
+        <li>{{'cake.ut.name'|translate}}</li>
+        <li>{{'cake.ut.user'|translate}}</li>
+        <li>{{'cake.ut.user'|translate}}</li>
+        <li>{{'cake.ut.time'|translate}}</li>
+        <li>{{'cake.ut.bg'|translate}}</li>
+        <li>{{'cake.ut.tg'|translate}}</li>
+      </ul>
+      <span>{{'cake.ut.kpi'|translate}}</span>
+      <span>{{'cake.ut.sus'|translate}}</span>
+      <span>{{'cake.ut.mt'|translate}}</span>
+      <ul class="list-disc pl-[24px] text-[#3A3A3A]">
+        <li>{{'cake.ut.mt1'|translate}}</li>
+        <li>{{'cake.ut.mt2'|translate}}</li>
+        <li>{{'cake.ut.mt3'|translate}}</li>
+        <li>{{'cake.ut.mt4'|translate}}</li>
+        <li>{{'cake.ut.mt5'|translate}}</li>
+      </ul>
+      <span>{{'cake.ut.candidate'|translate}}</span>
+      <ul class="list-disc pl-[24px] text-[#3A3A3A]">
+        <li>{{'cake.ut.candidateDesc'|translate}}</li>
+        <li>{{'cake.ut.candidateQuan'|translate}}</li>
+      </ul>
+    </span>
+  </div>
+  <div class="barlow-regular text-[14px] grid grid-cols-2 gap-x-[12px] gap-y-[16px] lg:grid-cols-3 lg:text-[18px]">
+    <div class="flex flex-col gap-[8px]">
+      <img class="rounded-[8px] h-[265px] md:h-[431px] lg:h-[603px]"
+        src="https://ik.imagekit.io/zurahoang21/portfolio/cake-ut-1.png" alt="cakeut1">
+      <span class="text-center">{{'cake.ut.par1'|translate}}</span>
+    </div>
+    <div class="flex flex-col gap-[8px]">
+      <img class="rounded-[8px] h-[265px] md:h-[431px] lg:h-[603px]"
+        src="https://ik.imagekit.io/zurahoang21/portfolio/cake-ut-3.png" alt="cakeut1">
+      <span class="text-center">{{'cake.ut.par2'|translate}}</span>
+    </div>
+    <div class="flex flex-col gap-[8px]">
+      <img class="rounded-[8px] h-[265px] md:h-[431px] lg:h-[603px]"
+        src="https://ik.imagekit.io/zurahoang21/portfolio/cake-ut-2.png" alt="cakeut1">
+      <span class="text-center">{{'cake.ut.par3'|translate}}</span>
+    </div>
+  </div>
+  <div
+    class="bg-[url(https://ik.imagekit.io/zurahoang21/portfolio/SUS.png)] bg-cover bg-no-repeat bg-center h-[164px] md:h-[309px] lg:h-[770px]">
+  </div>
+  <div class="flex flex-col gap-[16px] lg:gap-[24px]">
+    <span class="barlow-semibold text-[16px] md:text-[18px] lg:text-[24px]">
+      Prototype
+    </span>
+    <div class="flex justify-center">
+      <video class="w-[410px]" controls autoplay muted loop>
+        <source src="https://ik.imagekit.io/zurahoang21/portfolio/Cake.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</div>
