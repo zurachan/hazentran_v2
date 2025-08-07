@@ -112,6 +112,18 @@
     "ufd": "Flow of the appointment making function",
     "ia": "Information Architecture"
   },
+  "redeli": {
+    "tb": "The Problem",
+    "tbd": "Young people's demands for high quality food are on the rise, and they can be overwhelmed by the many choices available today.",
+    "os": "Our solution",
+    "osd": "reDeli brings the user closer to the place to eat and drink that is best suited to their mood, budget and preferences.",
+    "rcm": "Recommendations based on moods",
+    "rcmd": "Whether you're feeling happy and celebratory, romantic, relaxed and casual, adventurous, nostalgic, or inspired and creative, this function suggests the perfect place to match your mood.",
+    "ap": "Auto planning",
+    "apd": "It takes into account the user's preferences, current mood, dietary restrictions, and location to curate a seamless and enjoyable experience. The function aims to save time and effort by providing a well-rounded plan that covers different parts of the day, ensuring that users have a delightful culinary journey from start to finish.",
+    "easy": "Easily find place and book table",
+    "easyd": "By leveraging user preferences, location, and real-time availability data, it provides a seamless experience for discovering suitable venues and making reservations. Whether planning a quick coffee break, a dinner date, or an evening out with friends, this function ensures users can effortlessly find and secure a table without the hassle of manual searches and phone calls."
+  },
   "contact": {
     "touch": "Get in touch",
     "connect": "I'm glad to talk to you",
