@@ -1,0 +1,18 @@
+<div class="project-modal-container fixed z-50 flex items-center justify-center inset-0 bg-black/80 "
+  [ngClass]="isClosing ? 'animate-fadeOutBg': 'animate-fadeInBg'">
+  <button class="absolute cursor-pointer z-60 top-[16px] right-[16px]" (click)="onClose()">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+      <path opacity="0.5"
+        d="M15 27.5C21.9036 27.5 27.5 21.9036 27.5 15C27.5 8.09644 21.9036 2.5 15 2.5C8.09644 2.5 2.5 8.09644 2.5 15C2.5 21.9036 8.09644 27.5 15 27.5Z"
+        fill="#BDBDBD" />
+      <path
+        d="M16.325 14.9992L19.2 12.1242C19.5625 11.7617 19.5625 11.1617 19.2 10.7992C18.8375 10.4367 18.2375 10.4367 17.875 10.7992L15 13.6742L12.125 10.7992C11.7625 10.4367 11.1625 10.4367 10.8 10.7992C10.4375 11.1617 10.4375 11.7617 10.8 12.1242L13.675 14.9992L10.8 17.8742C10.4375 18.2367 10.4375 18.8367 10.8 19.1992C10.9875 19.3867 11.225 19.4742 11.4625 19.4742C11.7 19.4742 11.9375 19.3867 12.125 19.1992L15 16.3242L17.875 19.1992C18.0625 19.3867 18.3 19.4742 18.5375 19.4742C18.775 19.4742 19.0125 19.3867 19.2 19.1992C19.5625 18.8367 19.5625 18.2367 19.2 17.8742L16.325 14.9992Z"
+        fill="white" />
+    </svg>
+  </button>
+  <div
+    class="bg-white w-full h-full overflow-auto md:max-w-[1025px]! lg:max-w-[1280px]! shadow-lg transform transition-all duration-300 project-modal "
+    [ngClass]="isClosing ? 'animate-scaleDown': 'animate-scaleUp'">
+    <div>POPUP Xem ảnh</div>
+  </div>
+</div>
