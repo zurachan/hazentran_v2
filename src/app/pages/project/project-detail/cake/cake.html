@@ -221,7 +221,7 @@
       {{'uf'|translate}}
     </span>
     <div class="flex flex-col gap-[10px] p-[10px] items-center">
-      <img src="https://ik.imagekit.io/zurahoang21/portfolio/cake-uf.webp" alt="cakeuf">
+      <img class="cursor-zoom-in" [src]="uf.cropUrl" alt="cakeuf" (click)="popupService.openImagePopup(uf)">
       <span class="barlow-regular text-[14px] lg:text-[18px]">
         {{'cake.up.ufd'|translate}}
       </span>
@@ -231,17 +231,17 @@
     <span class="barlow-semibold text-[16px] md:text-[18px] lg:text-[24px]">
       {{'ia'|translate}}
     </span>
-    <img src="https://ik.imagekit.io/zurahoang21/portfolio/cake-ia.webp" alt="cakeia">
+    <img class="cursor-zoom-in" [src]="ia.cropUrl" alt="cakeia" (click)="popupService.openImagePopup(ia)">
   </div>
   <div class="flex flex-col gap-[16px] lg:gap-[24px]">
     <span class="barlow-semibold text-[16px] md:text-[18px] lg:text-[24px]">
       Wireframe
     </span>
     <div class="flex gap-[16px] justify-center">
-      <img class="h-[206px] md:h-[340px] lg:h-[602px]" src="https://ik.imagekit.io/zurahoang21/portfolio/cake-wf-2.png"
-        alt="cakewf2">
-      <img class="h-[206px] md:h-[340px] lg:h-[602px]" src="https://ik.imagekit.io/zurahoang21/portfolio/cake-wf-1.png"
-        alt="cakewf1">
+      @for (item of wf; track $index) {
+      <img class="h-[206px] md:h-[340px] lg:h-[602px]" [src]="item.cropUrl"
+        (click)="popupService.openImagePopup(item, wf)" alt="cakewf_{{$index}}">
+      }
     </div>
   </div>
   <div class="flex flex-col gap-[16px] lg:gap-[48px]">
@@ -1162,8 +1162,8 @@
       <span class="text-center">{{'cake.ut.par3'|translate}}</span>
     </div>
   </div>
-  <div
-    class="bg-[url(https://ik.imagekit.io/zurahoang21/portfolio/SUS.png)] bg-cover bg-no-repeat bg-center h-[164px] md:h-[309px] lg:h-[770px]">
+  <div>
+    <img [src]="ms.cropUrl" alt="cakems" class="cursor-zoom-in" (click)="popupService.openImagePopup(ms)">
   </div>
   <div class="flex flex-col gap-[16px] lg:gap-[24px]">
     <span class="barlow-semibold text-[16px] md:text-[18px] lg:text-[24px]">

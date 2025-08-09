@@ -10,7 +10,7 @@ import { ImageModel } from '../../../../shared/models/image.model';
   imports: [TranslateModule],
 })
 export class MuFreight {
-  constructor(private popupService: PopupService) {}
+  constructor(public popupService: PopupService) {}
   gallery: ImageModel[] = [
     {
       cropUrl:
@@ -37,7 +37,4 @@ export class MuFreight {
         'https://ik.imagekit.io/zurahoang21/portfolio/MuFreight-8-origin.webp?updatedAt=1754703130880',
     },
   ];
-  viewImage(item: ImageModel) {
-    this.popupService.openImagePopup(item, this.gallery);
-  }
 }

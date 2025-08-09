@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
-import { Candidate } from '../call-doctors/call-doctors';
+import { Participant } from '../../../../shared/models/participant.model';
+import { PopupService } from '../../../../services/popup.service';
+import { ImageModel } from '../../../../shared/models/image.model';
 
 @Component({
   selector: 'app-cake',
@@ -9,9 +11,9 @@ import { Candidate } from '../call-doctors/call-doctors';
   imports: [TranslateModule],
 })
 export class Cake {
-  constructor() {}
+  constructor(public popupService: PopupService) {}
 
-  candidates: Candidate[] = [
+  candidates: Participant[] = [
     {
       name: 'cake.up.quan.name',
       ava: 'https://ik.imagekit.io/zurahoang21/portfolio/hong-quan.png',
@@ -37,4 +39,30 @@ export class Cake {
       frustration: ['cake.up.nhi.frus1', 'cake.up.nhi.frus2'],
     },
   ];
+  uf = new ImageModel(
+    'https://ik.imagekit.io/zurahoang21/portfolio/cake-uf-2.webp?updatedAt=1754731409596',
+    'https://ik.imagekit.io/zurahoang21/portfolio/cake-uf-2.webp?updatedAt=1754731409596'
+  );
+  ia = new ImageModel(
+    'https://ik.imagekit.io/zurahoang21/portfolio/cake-ia-2.webp?updatedAt=1754731409759',
+    'https://ik.imagekit.io/zurahoang21/portfolio/cake-ia-2.webp?updatedAt=1754731409759'
+  );
+  wf: ImageModel[] = [
+    {
+      cropUrl:
+        'https://ik.imagekit.io/zurahoang21/portfolio/cake-wf-2.png?updatedAt=1754584038084',
+      originUrl:
+        'https://ik.imagekit.io/zurahoang21/portfolio/cake-wf-2.png?updatedAt=1754584038084',
+    },
+    {
+      cropUrl:
+        'https://ik.imagekit.io/zurahoang21/portfolio/cake-wf-1.png?updatedAt=1754584038003',
+      originUrl:
+        'https://ik.imagekit.io/zurahoang21/portfolio/cake-wf-1.png?updatedAt=1754584038003',
+    },
+  ];
+  ms = new ImageModel(
+    'https://ik.imagekit.io/zurahoang21/portfolio/SUS.png?updatedAt=1754588803541',
+    'https://ik.imagekit.io/zurahoang21/portfolio/SUS.png?updatedAt=1754588803541'
+  );
 }

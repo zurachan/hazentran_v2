@@ -1,6 +1,8 @@
-<div
-  class="bg-[url(https://ik.imagekit.io/zurahoang21/portfolio/banner-calldoctor.webp)] bg-cover bg-no-repeat bg-center h-[164px] md:h-[221px] lg:h-[466px]">
+<div class="w-full ">
+  <img class="w-full h-auto block mx-auto"
+    src='https://ik.imagekit.io/zurahoang21/portfolio/banner-calldoctor-new.webp?updatedAt=1754726333795' alt="cd">
 </div>
+
 <div class="flex flex-col gap-[24px] p-[24px] md:gap-[30px] md:p-[40px] lg:gap-[60px] lg:py-[60px] lg:px-[80px]">
   <span class="barlow-bold text-[18px] md:text-[20px] lg:text-[32px]">Call Doctors</span>
   <div class="flex justify-center">
@@ -219,7 +221,7 @@
       {{'uf'|translate}}
     </span>
     <div class="flex flex-col gap-[10px] p-[10px] items-center">
-      <img src="https://ik.imagekit.io/zurahoang21/portfolio/call-doctors-flow.png" alt="calldoctorsflow">
+      <img [src]="uf.cropUrl" alt="calldoctorsflow" class="cursor-zoom-in" (click)="popupService.openImagePopup(uf)">
       <span class="barlow-regular text-[14px] lg:text-[18px]">
         {{'cd.ufd'|translate}}
       </span>
@@ -229,13 +231,13 @@
     <span class="barlow-semibold text-[16px] md:text-[18px] lg:text-[24px]">
       {{'ia'|translate}}
     </span>
-    <img src="https://ik.imagekit.io/zurahoang21/portfolio/call-doctors-IA.png" alt="calldoctorsia">
+    <img [src]="ia.cropUrl" alt="calldoctorsia" class="cursor-zoom-in" (click)="popupService.openImagePopup(ia)">
   </div>
   <div class="flex flex-col gap-[16px] lg:gap-[24px]">
     <span class="barlow-semibold text-[16px] md:text-[18px] lg:text-[24px]">
       Wireframe
     </span>
-    <img src="https://ik.imagekit.io/zurahoang21/portfolio/call-doctors-WF.webp" alt="calldoctorswf">
+    <img [src]="wf.cropUrl" alt="calldoctorswf" class="cursor-zoom-in" (click)="popupService.openImagePopup(wf)">
   </div>
   <div class="flex flex-col gap-[16px] lg:gap-[48px]">
     <span class="barlow-semibold text-[16px] md:text-[18px] lg:text-[24px]">Style guide</span>
@@ -1761,7 +1763,8 @@
     </span>
     <div class="flex justify-center">
       <video class="w-[410px]" controls autoplay muted loop>
-        <source src="https://ik.imagekit.io/zurahoang21/portfolio/Call%20Doctors.mp4" type="video/mp4">
+        <source src="https://ik.imagekit.io/zurahoang21/portfolio/calldoctors-prototype.mp4?updatedAt=1754726062882"
+          type="video/mp4">
       </video>
     </div>
   </div>

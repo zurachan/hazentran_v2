@@ -11,9 +11,10 @@
       {{'imap.itdesc'|translate}}
     </span>
   </div>
-  <div
-    class="w-full rounded-[8px] bg-cover bg-no-repeat bg-center bg-[url(https://ik.imagekit.io/zurahoang21/portfolio/imap-1.webp)] h-[348px] md:h-[563px] lg:h-[1194px]">
+  <div class="w-full cursor-zoom-in" (click)="popupService.openImagePopup(imap1)">
+    <img class="w-full h-auto block rounded-[8px]" [src]="imap1.cropUrl" alt="imap1">
   </div>
+
   <div class="flex flex-col gap-[8px]">
     <span class="barlow-semibold text-[16px] md:text-[18px] lg:text-[24px]">{{'imap.solution'|translate}}</span>
     <span class="barlow-regular text-[14px] lg:text-[18px]">
@@ -25,15 +26,12 @@
       </ul>
     </span>
   </div>
-  <div
-    class="w-full rounded-[8px] bg-cover bg-no-repeat bg-center bg-[url(https://ik.imagekit.io/zurahoang21/portfolio/IMAP-3.webp)] h-[245px] md:h-[563px] lg:h-[1194px]">
+
+  @for (item of gallery; track $index) {
+  <div class="w-full cursor-zoom-in" (click)="popupService.openImagePopup(item, gallery)">
+    <img class="w-full h-auto block mx-auto rounded-[8px]" [src]="item.cropUrl" [alt]="`mp_${$index}`">
   </div>
-  <div
-    class="w-full rounded-[8px] bg-cover bg-no-repeat bg-center bg-[url(https://ik.imagekit.io/zurahoang21/portfolio/MuFreight-10.webp)] h-[245px] md:h-[563px] lg:h-[1194px]">
-  </div>
-  <div
-    class="w-full rounded-[8px] bg-cover bg-no-repeat bg-center bg-[url(https://ik.imagekit.io/zurahoang21/portfolio/IMAP-2.webp)] h-[245px] md:h-[563px] lg:h-[1194px]">
-  </div>
+  }
 </div>
 <div class="flex flex-col px-[24px] pb-[24px] gap-[16px] md:p-[40px] lg:px-[80px] lg:py-[60px] lg:gap-[24px]">
   <span class="barlow-semibold w-full text-black text-[14px] md:text-[16px] lg:text-[24px]">
