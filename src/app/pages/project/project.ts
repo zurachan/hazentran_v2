@@ -8,8 +8,10 @@ import {
 } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
+import { PopupService } from '../../services/popup.service';
 import { ProjectService } from '../../services/project.service';
-import { ProjectModel } from './../../services/project.service';
+import { ViewImage } from '../../shared/components/view-image-popup/view-image';
+import { ProjectModel } from '../../shared/models/project.model';
 import { ProjectDetailComponent } from './project-detail/project-detail';
 
 @Component({
@@ -24,31 +26,69 @@ import { ProjectDetailComponent } from './project-detail/project-detail';
 export class Project implements OnInit {
   constructor(
     private projectService: ProjectService,
-    private container: ViewContainerRef
+    private popupService: PopupService
   ) {
     this.projects = this.projectService.projects;
   }
   ngOnInit(): void {
-    this.closeProjectDetail();
+    this.listenOpenProjectDetail();
+    this.listenCloseProjectDetail();
+    this.listenOpenImage();
+    this.listenCloseImage();
   }
   projects: ProjectModel[] = [];
   @ViewChild('modal', { read: ViewContainerRef, static: true })
-  componentRef!: ComponentRef<ProjectDetailComponent>;
+  projectContainer!: ViewContainerRef;
+  projectComponentRef?: ComponentRef<ProjectDetailComponent>;
+
+  @ViewChild('image', { read: ViewContainerRef, static: true })
+  imageContainer!: ViewContainerRef;
+  imageComponentRef?: ComponentRef<ViewImage>;
 
   openProjectDetail(item: ProjectModel) {
-    this.container.clear();
-    this.componentRef = this.container.createComponent(ProjectDetailComponent);
-    this.componentRef.setInput('project', item);
-    this.componentRef.changeDetectorRef.detectChanges();
+    this.popupService.openProjectPopup(item);
   }
-
-  closeProjectDetail() {
-    this.projectService.closeModal$.subscribe((reason) => {
-      this.container.clear();
-      if (this.componentRef) this.componentRef.destroy();
+  listenOpenProjectDetail() {
+    this.popupService.openProjectPopup$.subscribe((data) => {
+      this.projectContainer.clear();
+      this.projectComponentRef = this.projectContainer.createComponent(
+        ProjectDetailComponent
+      );
+      this.projectComponentRef.setInput('project', data);
+      this.popupService.register('project');
+      this.projectComponentRef.changeDetectorRef.detectChanges();
     });
   }
-
+  listenCloseProjectDetail() {
+    this.popupService.closeProjectPopup$.subscribe((reason) => {
+      this.projectContainer.clear();
+      this.popupService.unregister('project');
+      if (this.projectComponentRef) {
+        this.projectComponentRef.destroy();
+        this.projectComponentRef = undefined;
+      }
+    });
+  }
+  listenOpenImage() {
+    this.popupService.openImagePopup$.subscribe((data) => {
+      this.imageContainer.clear();
+      this.imageComponentRef = this.imageContainer.createComponent(ViewImage);
+      this.imageComponentRef.setInput('image', data.image);
+      this.imageComponentRef.setInput('gallery', data.gallery);
+      this.popupService.register('image');
+      this.imageComponentRef.changeDetectorRef.detectChanges();
+    });
+  }
+  listenCloseImage() {
+    this.popupService.closeImagePopup$.subscribe(() => {
+      this.imageContainer.clear();
+      this.popupService.unregister('image');
+      if (this.imageComponentRef) {
+        this.imageComponentRef?.destroy();
+        this.imageComponentRef = undefined;
+      }
+    });
+  }
   sendMessage() {
     window.open('https://zalo.me/0964735598', '_blank');
   }
