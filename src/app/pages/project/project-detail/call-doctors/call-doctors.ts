@@ -1,18 +1,8 @@
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
-
-export interface Candidate {
-  name: string;
-  ava: string;
-  age: number;
-  status: string;
-  location: string;
-  occupation: string;
-  bio: string;
-  goal: string[];
-  motivate: string[];
-  frustration: string[];
-}
+import { Participant } from '../../../../shared/models/participant.model';
+import { PopupService } from './../../../../services/popup.service';
+import { ImageModel } from '../../../../shared/models/image.model';
 
 @Component({
   selector: 'app-call-doctors',
@@ -21,9 +11,9 @@ export interface Candidate {
   imports: [TranslateModule],
 })
 export class CallDoctors {
-  constructor() {}
+  constructor(public popupService: PopupService) {}
 
-  candidates: Candidate[] = [
+  candidates: Participant[] = [
     {
       name: 'cd.b.name',
       ava: 'https://ik.imagekit.io/zurahoang21/portfolio/nguyen-thi-b.png',
@@ -61,4 +51,17 @@ export class CallDoctors {
       frustration: ['cd.a.frus1', 'cd.a.frus2'],
     },
   ];
+
+  uf = new ImageModel(
+    'https://ik.imagekit.io/zurahoang21/portfolio/call-doctors-flow.png?updatedAt=1754730866454',
+    'https://ik.imagekit.io/zurahoang21/portfolio/call-doctors-flow.png?updatedAt=1754730866454'
+  );
+  ia = new ImageModel(
+    'https://ik.imagekit.io/zurahoang21/portfolio/call-doctors-IA.png?updatedAt=1754534579623',
+    'https://ik.imagekit.io/zurahoang21/portfolio/call-doctors-IA.png?updatedAt=1754534579623'
+  );
+  wf = new ImageModel(
+    'https://ik.imagekit.io/zurahoang21/portfolio/call-doctors-WF.webp?updatedAt=1754534579442',
+    'https://ik.imagekit.io/zurahoang21/portfolio/call-doctors-WF.webp?updatedAt=1754534579442'
+  );
 }

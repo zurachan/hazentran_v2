@@ -22,8 +22,8 @@
   </div>
   <div class="grid grid-cols-1 gap-[24px] md:grid-cols-2 lg:gap-[40px]">
     @for (item of gallery; track $index) {
-    <div class="w-full cursor-pointer" (click)="viewImage(item)">
-      <img class="w-full h-auto block mx-auto" [src]="item.cropUrl" [alt]="`mf_${$index}`">
+    <div class="w-full cursor-zoom-in" (click)="popupService.openImagePopup(item, gallery)">
+      <img class="w-full h-auto block mx-auto rounded-[8px]" [src]="item.cropUrl" [alt]="`mf_${$index}`">
     </div>
     }
   </div>

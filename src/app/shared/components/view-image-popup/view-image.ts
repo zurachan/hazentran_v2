@@ -21,7 +21,7 @@ export class ViewImage implements OnInit, OnChanges, OnDestroy {
   @Input() gallery?: ImageModel[];
   currentIndex = 0;
   currentImage!: ImageModel;
-
+  transformOrigin = 'center center';
   constructor(private popupService: PopupService) {}
   isClosing = false;
   zoomLevel = 1;
@@ -50,6 +50,18 @@ export class ViewImage implements OnInit, OnChanges, OnDestroy {
     this.popupService.closeImagePopup();
   }
   onZoomIn(event: MouseEvent) {
+    const img = event.target as HTMLImageElement;
+    const rect = img.getBoundingClientRect();
+
+    // Tính vị trí click (theo % so với kích thước ảnh)
+    const offsetX = event.clientX - rect.left;
+    const offsetY = event.clientY - rect.top;
+    const percentX = (offsetX / rect.width) * 100;
+    const percentY = (offsetY / rect.height) * 100;
+
+    // Set transform-origin theo vị trí click
+    this.transformOrigin = `${percentX}% ${percentY}%`;
+    
     if (this.zoomLevel < this.maxZoom)
       this.zoomLevel = +(this.zoomLevel + 1).toFixed(2);
   }

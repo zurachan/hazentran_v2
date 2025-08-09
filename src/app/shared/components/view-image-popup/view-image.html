@@ -29,11 +29,11 @@
       [ngClass]="isClosing ? 'animate-scaleDown': 'animate-scaleUp'">
       <!-- Ảnh -->
       <img [src]="currentImage.originUrl"
-        class="max-h-full w-auto mx-auto my-auto block transition-transform select-none origin-center"
+        class="max-h-full w-auto mx-auto my-auto block transition-transform select-none"
         [class.cursor-zoom-in]="zoomLevel < maxZoom"
         [class.cursor-zoom-out]="zoomLevel >= maxZoom && zoomLevel > minZoom"
-        [style.transform]="'scale(' + zoomLevel + ')'" (contextmenu)="onZoomOut($event)"
-        (click)="zoomLevel < maxZoom ? onZoomIn($event) : onZoomOut($event)" />
+        [style.transform]="'scale(' + zoomLevel + ')'" [style.transform-origin]="transformOrigin"
+        (contextmenu)="onZoomOut($event)" (click)="zoomLevel < maxZoom ? onZoomIn($event) : onZoomOut($event)" />
     </div>
     <!-- Nút Next -->
     <div>

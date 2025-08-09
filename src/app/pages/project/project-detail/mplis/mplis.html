@@ -11,15 +11,11 @@
       {{'mplis.itdesc'|translate}}
     </span>
   </div>
-  <div
-    class="w-full rounded-[8px] bg-cover bg-no-repeat bg-center bg-[url(https://ik.imagekit.io/zurahoang21/portfolio/MuFreight-9.webp)] h-[315px] md:h-[507px] lg:h-[1076px]">
+  @for (item of gallery; track $index) {
+  <div class="w-full cursor-zoom-in" (click)="popupService.openImagePopup(item, gallery)">
+    <img class="w-full h-auto block mx-auto rounded-[8px]" [src]="item.cropUrl" [alt]="`mp_${$index}`">
   </div>
-  <div
-    class="w-full rounded-[8px] bg-cover bg-no-repeat bg-center bg-[url(https://ik.imagekit.io/zurahoang21/portfolio/MPLIS-2.webp)] h-[217px] md:h-[351px] lg:h-[746px]">
-  </div>
-  <div
-    class="w-full rounded-[8px] bg-cover bg-no-repeat bg-center bg-[url(https://ik.imagekit.io/zurahoang21/portfolio/MPLIS-3.webp)] h-[245px] md:h-[395px] lg:h-[839px]">
-  </div>
+  }
   <div>
     <svg xmlns="http://www.w3.org/2000/svg" class="w-full" viewBox="0 0 1455 1366" fill="none">
       <rect width="1455" height="1366" fill="#FAF8FC" />
