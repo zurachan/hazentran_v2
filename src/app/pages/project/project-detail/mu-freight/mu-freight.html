@@ -21,18 +21,11 @@
     </span>
   </div>
   <div class="grid grid-cols-1 gap-[24px] md:grid-cols-2 lg:gap-[40px]">
-    <div
-      class="bg-cover bg-no-repeat bg-center bg-[url(https://ik.imagekit.io/zurahoang21/portfolio/MuFreight-5.jpeg)] h-[315px] md:h-[243px] lg:h-[520px]">
+    @for (item of gallery; track $index) {
+    <div class="w-full cursor-pointer" (click)="viewImage(item)">
+      <img class="w-full h-auto block mx-auto" [src]="item.cropUrl" [alt]="`mf_${$index}`">
     </div>
-    <div
-      class="bg-cover bg-no-repeat bg-center bg-[url(https://ik.imagekit.io/zurahoang21/portfolio/MuFreight-6.jpeg)] h-[315px] md:h-[243px] lg:h-[520px]">
-    </div>
-    <div
-      class="bg-cover bg-no-repeat bg-center bg-[url(https://ik.imagekit.io/zurahoang21/portfolio/MuFreight-7.webp)] h-[315px] md:h-[243px] lg:h-[520px]">
-    </div>
-    <div
-      class="bg-cover bg-no-repeat bg-center bg-[url(https://ik.imagekit.io/zurahoang21/portfolio/MuFreight-8-crop.jpeg)] h-[315px] md:h-[243px] lg:h-[520px]">
-    </div>
+    }
   </div>
 </div>
 <div class="bg-[#051c3c] flex flex-col p-[24px] gap-[16px] md:p-[40px] lg:px-[80px] lg:py-[60px] lg:gap-[24px]">

@@ -1,12 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
-
-export interface ProjectModel {
-  coverPath: string;
-  urlPath: string;
-  name: string;
-}
-
+import { ProjectModel } from '../shared/models/project.model';
 @Injectable({
   providedIn: 'root',
 })
@@ -14,7 +8,8 @@ export class ProjectService {
   constructor() {}
   projects: ProjectModel[] = [
     {
-      coverPath: 'https://ik.imagekit.io/zurahoang21/portfolio/MuFreight-3.webp',
+      coverPath:
+        'https://ik.imagekit.io/zurahoang21/portfolio/MuFreight-3.webp',
       urlPath: 'mufreight',
       name: 'muFreight',
     },
@@ -29,7 +24,8 @@ export class ProjectService {
       name: 'IMAP',
     },
     {
-      coverPath: 'https://ik.imagekit.io/zurahoang21/portfolio/Call-doctors.webp',
+      coverPath:
+        'https://ik.imagekit.io/zurahoang21/portfolio/Call-doctors.webp',
       urlPath: 'calldoctors',
       name: 'Call Doctors',
     },
@@ -44,8 +40,4 @@ export class ProjectService {
       name: 'Cake by VPBank',
     },
   ];
-  closeModal$ = new Subject();
-  closeModal(reason?: any) {
-    this.closeModal$.next(reason);
-  }
 }

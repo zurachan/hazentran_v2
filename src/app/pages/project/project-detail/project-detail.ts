@@ -7,16 +7,15 @@ import {
   ViewChild,
   ViewContainerRef,
 } from '@angular/core';
-import {
-  ProjectModel,
-  ProjectService,
-} from '../../../services/project.service';
+import { PopupService } from '../../../services/popup.service';
+import { ProjectService } from '../../../services/project.service';
 import { Cake } from './cake/cake';
 import { CallDoctors } from './call-doctors/call-doctors';
 import { Imap } from './imap/imap';
 import { Mplis } from './mplis/mplis';
 import { MuFreight } from './mu-freight/mu-freight';
 import { Redeli } from './redeli/redeli';
+import { ProjectModel } from '../../../shared/models/project.model';
 
 @Component({
   selector: 'app-project-detail',
@@ -26,7 +25,7 @@ import { Redeli } from './redeli/redeli';
 })
 export class ProjectDetailComponent implements OnInit, AfterViewInit {
   @Input() project!: ProjectModel;
-  constructor(private projectService: ProjectService) {}
+  constructor(private popupService: PopupService) {}
   isClosing = false;
   @ViewChild('prjdetail', { read: ViewContainerRef })
   prjdetail!: ViewContainerRef;
@@ -65,15 +64,12 @@ export class ProjectDetailComponent implements OnInit, AfterViewInit {
   }
   onClose() {
     this.isClosing = true;
-    this.projectService.closeModal();
+    this.popupService.closeProjectPopup();
   }
   handleKeydown = (event: KeyboardEvent) => {
-    if (event.key === 'Escape') {
+    if (event.key === 'Escape' && this.popupService.isTop('project'))
       this.onClose();
-    }
   };
-  onScroll() {}
-
   ngOnDestroy(): void {
     // ✅ Khôi phục scroll khi đóng popup
     document.body.style.overflow = '';

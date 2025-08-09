@@ -11,8 +11,8 @@
     </svg>
   </button>
   <div
-    class="bg-white w-full h-full overflow-auto md:max-w-[1025px]! lg:max-w-[1280px]! shadow-lg transform transition-all duration-300 project-modal "
-    (scroll)="onScroll()" [ngClass]="isClosing ? 'animate-scaleDown': 'animate-scaleUp'">
+    class="bg-white w-full h-full overflow-auto md:max-w-[1025px]! lg:max-w-[1280px]! shadow-lg transform transition-all duration-300 project-modal"
+    [ngClass]="isClosing ? 'animate-scaleDown': 'animate-scaleUp'">
     <ng-container #prjdetail></ng-container>
   </div>
 </div>
