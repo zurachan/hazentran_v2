@@ -13,42 +13,69 @@
   <div class="w-full h-full flex justify-between items-center">
     <!-- Nút Prev -->
     <div>
-      <button *ngIf="hasGallery() && currentIndex > 0" (click)="prevImage()"
-        class="absolute z-80 left-4 top-1/2 -translate-y-1/2 px-2 rounded-full cursor-pointer">
-        <svg class="w-[30px] h-[30px]" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path opacity="0.5"
-            d="M15 27.5C21.9036 27.5 27.5 21.9036 27.5 15C27.5 8.09644 21.9036 2.5 15 2.5C8.09644 2.5 2.5 8.09644 2.5 15C2.5 21.9036 8.09644 27.5 15 27.5Z"
-            fill="#BDBDBD" />
-          <path d="M15 20 L11 15 C10.5 14.5 10.5 13.5 11 13 L15 8" stroke="white" stroke-linecap="round"
-            stroke-linejoin="round" />
+      @if (hasGallery() && currentIndex > 0) {
+      <button (click)="prevImage()"
+        class="absolute z-80 left-4 top-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center rounded-full bg-black/60 backdrop-blur-sm hover:bg-white/20 transition-all duration-200 cursor-pointer">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
         </svg>
       </button>
+      }
     </div>
+
     <div
       class="w-full h-full overflow-auto md:max-w-[1025px]! lg:max-w-[1280px]! shadow-lg transform transition-all duration-300 project-modal flex items-center"
-      [ngClass]="isClosing ? 'animate-scaleDown': 'animate-scaleUp'">
-      <!-- Ảnh -->
+      [ngClass]="isClosing ? 'animate-scaleDown': 'animate-scaleUp'" #imageContainer>
+      <!-- Image -->
       <img [src]="currentImage.originUrl"
         class="max-h-full w-auto mx-auto my-auto block transition-transform select-none"
-        [class.cursor-zoom-in]="zoomLevel < maxZoom"
-        [class.cursor-zoom-out]="zoomLevel >= maxZoom && zoomLevel > minZoom"
-        [style.transform]="'scale(' + zoomLevel + ')'" [style.transform-origin]="transformOrigin"
-        (contextmenu)="onZoomOut($event)" (click)="zoomLevel < maxZoom ? onZoomIn($event) : onZoomOut($event)" />
+        [class.cursor-grab]="isZoomed && !isPanning" [class.cursor-grabbing]="isPanning"
+        [style.transform]="imageTransform" [style.transition]="isPanning ? 'none' : 'transform 0.3s ease'"
+        (mousedown)="onMouseDown($event)" (mousemove)="onMouseMove($event)" (mouseup)="onMouseUp($event)"
+        (mouseleave)="onMouseLeave($event)" #imageElement draggable="false" />
     </div>
+
     <!-- Nút Next -->
     <div>
-      <button *ngIf="hasGallery() && currentIndex < imagesLength - 1" (click)="nextImage()"
-        class="absolute z-80 right-4 top-1/2 -translate-y-1/2 px-2 rounded-full cursor-pointer">
-        <svg class="w-[30px] h-[30px]" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path opacity="0.5"
-            d="M15 27.5C21.9036 27.5 27.5 21.9036 27.5 15C27.5 8.09644 21.9036 2.5 15 2.5C8.09644 2.5 2.5 8.09644 2.5 15C2.5 21.9036 8.09644 27.5 15 27.5Z"
-            fill="#BDBDBD" />
-          <g transform="scale(-1,1) translate(-30,0)">
-            <path d="M15 20 L11 15 C10.5 14.5 10.5 13.5 11 13 L15 8" stroke="white" stroke-linecap="round"
-              stroke-linejoin="round" />
-          </g>
+      @if (hasGallery() && currentIndex < imagesLength - 1) { <button (click)="nextImage()"
+        class="absolute z-80 right-4 top-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center rounded-full bg-black/60 backdrop-blur-sm hover:bg-white/20 transition-all duration-200 cursor-pointer">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
         </svg>
-      </button>
+        </button>
+        }
     </div>
+  </div>
+  <!-- Zoom Controls -->
+  <div
+    class="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-80 flex items-center gap-2 bg-black/60 backdrop-blur-sm px-4 py-2 rounded-full">
+    <!-- Zoom Out Button -->
+    <button title="Zoom out" (click)="zoomOut()" [disabled]="zoomLevel <= minZoom"
+      class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 12H19" stroke="white" stroke-width="2" stroke-linecap="round" />
+      </svg>
+    </button>
+
+    <!-- Zoom Level Display -->
+    <div class="text-white text-sm font-medium min-w-[60px] text-center">
+      {{(zoomLevel * 100) | number:'1.0-0'}}%
+    </div>
+
+    <!-- Zoom In Button -->
+    <button title="Zoom in" (click)="zoomIn()" [disabled]="zoomLevel >= maxZoom"
+      class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 5V19M5 12H19" stroke="white" stroke-width="2" stroke-linecap="round" />
+      </svg>
+    </button>
+
+    <!-- Reset Zoom Button -->
+    <button title="Reset view" (click)="resetZoom()" [disabled]="zoomLevel === 1"
+      class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 ml-2">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 12H21M3 6H21M3 18H21" stroke="white" stroke-width="2" stroke-linecap="round" />
+      </svg>
+    </button>
   </div>
 </div>
